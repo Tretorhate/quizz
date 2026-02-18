@@ -1,0 +1,1863 @@
+[
+  {
+    "id": 1,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "A distributed system is a collection of independent computers that appears to its users as:",
+    "options": [
+      "A set of loosely coupled independent machines",
+      "A single coherent system",
+      "A centralized server with multiple clients",
+      "A peer-to-peer file sharing network only"
+    ],
+    "answer": 1,
+    "explanation": "Classic definition (Tanenbaum): the key illusion is the single-system image (distribution transparency)."
+  },
+  {
+    "id": 2,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Which of the following is NOT one of the four main design goals of distributed systems?",
+    "options": [
+      "Resource sharing",
+      "Distribution transparency",
+      "Openness",
+      "Centralized control"
+    ],
+    "answer": 3,
+    "explanation": "Distributed systems aim for decentralization. Centralized control is the opposite of the distributed paradigm."
+  },
+  {
+    "id": 3,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Which type of distribution transparency hides the fact that an object may be moved to another location while in use?",
+    "options": [
+      "Access transparency",
+      "Location transparency",
+      "Relocation transparency",
+      "Migration transparency"
+    ],
+    "answer": 2,
+    "explanation": "Relocation transparency hides relocation of objects while they are being used."
+  },
+  {
+    "id": 4,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "The root of the Domain Name System (DNS) is logically centralized but physically:",
+    "options": [
+      "Centralized",
+      "Decentralized across several organizations",
+      "Fully distributed with no links",
+      "A single server in one data center"
+    ],
+    "answer": 1,
+    "explanation": "DNS root is logically centralized but physically massively distributed and decentralized across organizations."
+  },
+  {
+    "id": 5,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Full distribution transparency is often not desirable because:",
+    "options": [
+      "It is impossible to achieve",
+      "It hides important performance and failure information from users and developers",
+      "It violates the CAP theorem",
+      "It increases network latency"
+    ],
+    "answer": 1,
+    "explanation": "Full transparency can hide latencies, failures, and slow computers, making debugging and performance optimization harder."
+  },
+  {
+    "id": 6,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Which of the following is a challenge in distributed systems?",
+    "options": [
+      "No common physical clock",
+      "No global state",
+      "Failure independence",
+      "All of the above"
+    ],
+    "answer": 3,
+    "explanation": "Distributed systems face issues like partial failures, no common clock, and no global state."
+  },
+  {
+    "id": 7,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Scalability in distributed systems can be achieved through:",
+    "options": [
+      "Size scalability",
+      "Geographic scalability",
+      "Administrative scalability",
+      "All of the above"
+    ],
+    "answer": 3,
+    "explanation": "Scalability has multiple dimensions: size, geography, and administration."
+  },
+  {
+    "id": 8,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "What is the main reason for using overlay networks in distributed systems?",
+    "options": [
+      "To provide centralized control",
+      "To create logical topologies on top of physical networks",
+      "To reduce network latency",
+      "To encrypt all communications"
+    ],
+    "answer": 1,
+    "explanation": "Overlay networks allow custom routing and topologies."
+  },
+  {
+    "id": 9,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "In a client-server architecture, the server is:",
+    "options": [
+      "Always a single machine",
+      "A process that provides services",
+      "Only used for web applications",
+      "Responsible for initiating communication"
+    ],
+    "answer": 1,
+    "explanation": "Server is a process providing services to clients."
+  },
+  {
+    "id": 10,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Peer-to-peer systems are characterized by:",
+    "options": [
+      "Centralized coordination",
+      "All nodes having equal roles",
+      "Strict client-server separation",
+      "Single point of failure"
+    ],
+    "answer": 1,
+    "explanation": "P2P systems have symmetric roles for nodes."
+  },
+  {
+    "id": 11,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "Which statement best distinguishes synchronous communication from asynchronous communication?",
+    "options": [
+      "Synchronous always uses RPC while asynchronous always uses queues",
+      "In synchronous communication, the sender blocks until a response is received",
+      "Asynchronous communication guarantees higher reliability",
+      "Synchronous communication cannot experience failures"
+    ],
+    "answer": 1,
+    "explanation": "Synchronous = blocking (caller waits). Asynchronous = fire-and-forget (non-blocking)."
+  },
+  {
+    "id": 12,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "Which RPC semantic may cause a remote operation to be executed more than once?",
+    "options": ["At-most-once", "At-least-once", "Exactly-once", "Best-effort"],
+    "answer": 1,
+    "explanation": "At-least-once semantics retry on failure and can cause duplicates if the original request succeeded but the response was lost."
+  },
+  {
+    "id": 13,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "What is the role of an Interface Definition Language (IDL) in RPC-based systems?",
+    "options": [
+      "To define typed language constructs",
+      "To define the interface of remote procedures so clients and servers can communicate independently of programming languages",
+      "To generate server skeletons only",
+      "To handle network partitions"
+    ],
+    "answer": 1,
+    "explanation": "IDL enables language-neutral stub/skeleton generation for cross-language RPC."
+  },
+  {
+    "id": 14,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "A client sends an RPC request, the server executes it, but the response is lost. The client retries. Under which RPC semantic could this lead to incorrect behavior if the operation is not idempotent?",
+    "options": ["At-most-once", "At-least-once", "Exactly-once", "Best-effort"],
+    "answer": 1,
+    "explanation": "At-least-once can cause duplicate execution on retry."
+  },
+  {
+    "id": 15,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "Which use case is MOST appropriate for publish/subscribe messaging rather than RPC?",
+    "options": [
+      "Fetching a user profile synchronously",
+      "Triggering multiple independent services when an order is created",
+      "Requesting immediate confirmation of a payment",
+      "Performing a remote database query"
+    ],
+    "answer": 1,
+    "explanation": "Pub/sub is ideal for one-to-many decoupling and event-driven workflows."
+  },
+  {
+    "id": 16,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "In messaging systems, what does 'at-least-once' delivery guarantee?",
+    "options": [
+      "The message is delivered exactly once",
+      "The message is delivered at least once, possibly more",
+      "The message is delivered at most once",
+      "No guarantees"
+    ],
+    "answer": 1,
+    "explanation": "Can lead to duplicates."
+  },
+  {
+    "id": 17,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "What is a common way to handle failures in RPC?",
+    "options": [
+      "Ignore them",
+      "Use timeouts and retries",
+      "Always use synchronous calls",
+      "Centralize all calls"
+    ],
+    "answer": 1,
+    "explanation": "Timeouts and retries are standard."
+  },
+  {
+    "id": 18,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "In gRPC, what is used for defining service interfaces?",
+    "options": ["JSON", "Protocol Buffers", "XML", "YAML"],
+    "answer": 1,
+    "explanation": "ProtoBuf for IDL in gRPC."
+  },
+  {
+    "id": 19,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "What is the main advantage of asynchronous messaging?",
+    "options": [
+      "Immediate response",
+      "Decoupling sender and receiver",
+      "Guaranteed order",
+      "Low latency"
+    ],
+    "answer": 1,
+    "explanation": "Decoupling in time and space."
+  },
+  {
+    "id": 20,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "Which protocol is commonly used for RPC?",
+    "options": ["HTTP", "TCP", "UDP", "All of the above"],
+    "answer": 3,
+    "explanation": "RPC can be over various transports."
+  },
+  {
+    "id": 21,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Which statement about Lamport clocks is CORRECT?",
+    "options": [
+      "If two events have the same Lamport timestamp, they are concurrent",
+      "Lamport clocks are always able to determine whether one event caused another",
+      "If event A happened before event B, then the Lamport timestamp of A is less than that of B",
+      "Lamport clocks rely on synchronized physical clocks"
+    ],
+    "answer": 2,
+    "explanation": "Lamport clocks capture happened-before."
+  },
+  {
+    "id": 22,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Which property distinguishes vector clocks from Lamport clocks?",
+    "options": [
+      "Vector clocks assign a single integer to each event",
+      "Vector clocks require synchronized physical clocks",
+      "Vector clocks enforce a total order on events",
+      "Vector clocks can detect concurrent events"
+    ],
+    "answer": 3,
+    "explanation": "Vector clocks detect concurrency."
+  },
+  {
+    "id": 23,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Consider three nodes with vector clocks: Event A has VC(A) = [3, 1, 2] and Event B has VC(B) = [2, 4, 1]. What is the relationship between these events?",
+    "options": [
+      "Event A happened before Event B",
+      "Event B happened before Event A",
+      "Events A and B are concurrent",
+      "Events A and B are identical"
+    ],
+    "answer": 2,
+    "explanation": "Concurrent since neither is <= the other."
+  },
+  {
+    "id": 24,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "What is a consistent global snapshot?",
+    "options": [
+      "A set of local states with no messages in transit",
+      "A set of local states that could have occurred simultaneously",
+      "A total order of all events",
+      "A synchronization point"
+    ],
+    "answer": 1,
+    "explanation": "Respects causality."
+  },
+  {
+    "id": 25,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Chandy-Lamport algorithm is used for:",
+    "options": [
+      "Clock synchronization",
+      "Taking consistent snapshots",
+      "Consensus",
+      "Replication"
+    ],
+    "answer": 1,
+    "explanation": "Distributed snapshots."
+  },
+  {
+    "id": 26,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Lamport clocks provide:",
+    "options": ["Total order", "Partial order", "No order", "Physical time"],
+    "answer": 1,
+    "explanation": "Total order consistent with happened-before."
+  },
+  {
+    "id": 27,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Vector clocks are of size:",
+    "options": ["1", "Number of processes", "Log n", "Constant"],
+    "answer": 1,
+    "explanation": "Vector of size N for N processes."
+  },
+  {
+    "id": 28,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "In snapshots, marker messages are used to:",
+    "options": [
+      "Synchronize clocks",
+      "Record channel states",
+      "Elect leaders",
+      "Replicate data"
+    ],
+    "answer": 1,
+    "explanation": "In Chandy-Lamport, markers trigger state recording."
+  },
+  {
+    "id": 29,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Happened-before relation is:",
+    "options": ["Transitive", "Reflexive", "Symmetric", "All of the above"],
+    "answer": 0,
+    "explanation": "Transitive partial order."
+  },
+  {
+    "id": 30,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Physical clocks can be synchronized using:",
+    "options": ["NTP", "Lamport clocks", "Vector clocks", "Snapshots"],
+    "answer": 0,
+    "explanation": "NTP for physical clock sync."
+  },
+  {
+    "id": 31,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "In a distributed key-value store, to optimize for read throughput with strong consistency, which replication strategy?",
+    "options": [
+      "Primary-backup",
+      "Quorum",
+      "Chain replication",
+      "Multi-primary"
+    ],
+    "answer": 2,
+    "explanation": "Chain for strong consistency with read from tail."
+  },
+  {
+    "id": 32,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "For N=9 replicas, 3 per DC, to survive one DC failure for reads and writes, quorum?",
+    "options": ["W=5, R=5", "W=4, R=6", "W=7, R=3", "W=6, R=4"],
+    "answer": 1,
+    "explanation": "To survive 3 failures, W+R >9, and W>4.5 for writes available."
+  },
+  {
+    "id": 33,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Linearizability is:",
+    "options": ["Strongest consistency", "Eventual", "Causal", "Sequential"],
+    "answer": 0,
+    "explanation": "Single total order as if single machine."
+  },
+  {
+    "id": 34,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Eventual consistency means:",
+    "options": [
+      "All replicas eventually converge",
+      "Immediate consistency",
+      "No consistency",
+      "Only writes consistent"
+    ],
+    "answer": 0,
+    "explanation": "If no more writes, all reads see same value."
+  },
+  {
+    "id": 35,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Quorum systems ensure:",
+    "options": [
+      "Any read overlaps with any write",
+      "All reads see latest write",
+      "With W+R > N",
+      "All of the above"
+    ],
+    "answer": 3,
+    "explanation": "Quorum intersection property."
+  },
+  {
+    "id": 36,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Primary-backup is:",
+    "options": [
+      "Synchronous or asynchronous",
+      "Always synchronous",
+      "Always asynchronous",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Can be sync for strong consistency or async for availability."
+  },
+  {
+    "id": 37,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "In Dynamo, consistency is:",
+    "options": ["Strong", "Eventual", "Linearizable", "Sequential"],
+    "answer": 1,
+    "explanation": "Tun able with quorums, but default eventual."
+  },
+  {
+    "id": 38,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Causal consistency ensures:",
+    "options": [
+      "Causal order respected",
+      "Total order",
+      "No order",
+      "Physical order"
+    ],
+    "answer": 0,
+    "explanation": "Respects potential causality."
+  },
+  {
+    "id": 39,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Session guarantees are:",
+    "options": [
+      "Client-centric consistency",
+      "Data-centric",
+      "System-centric",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Like read-your-writes."
+  },
+  {
+    "id": 40,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Replication is for:",
+    "options": ["Fault tolerance", "Performance", "Both", "Neither"],
+    "answer": 2,
+    "explanation": "Availability and load balancing."
+  },
+  {
+    "id": 41,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Which type of failure occurs when a node stops responding entirely?",
+    "options": ["Byzantine", "Crash", "Timing", "Omission"],
+    "answer": 1,
+    "explanation": "Crash failure."
+  },
+  {
+    "id": 42,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "What is the purpose of checkpointing in distributed systems?",
+    "options": [
+      "Save state for recovery",
+      "Synchronize clocks",
+      "Detect partitions",
+      "Prevent concurrency"
+    ],
+    "answer": 0,
+    "explanation": "Checkpoint for rollback recovery."
+  },
+  {
+    "id": 43,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Byzantine failures are:",
+    "options": ["Benign", "Arbitrary behavior", "Only crashes", "Timing only"],
+    "answer": 1,
+    "explanation": "Malicious or arbitrary."
+  },
+  {
+    "id": 44,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "To tolerate f crash failures, need:",
+    "options": ["f+1 replicas", "2f+1", "3f+1", "f"],
+    "answer": 0,
+    "explanation": "For crashes, f+1."
+  },
+  {
+    "id": 45,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "For Byzantine, need:",
+    "options": ["f+1", "2f+1", "3f+1", "4f+1"],
+    "answer": 2,
+    "explanation": "3f+1 for BFT."
+  },
+  {
+    "id": 46,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Group membership service provides:",
+    "options": [
+      "View of current members",
+      "Clock sync",
+      "Snapshots",
+      "Consensus"
+    ],
+    "answer": 0,
+    "explanation": "Detect failures and maintain group view."
+  },
+  {
+    "id": 47,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Rollback recovery uses:",
+    "options": [
+      "Checkpoints and logs",
+      "Only checkpoints",
+      "Only logs",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "To recover state."
+  },
+  {
+    "id": 48,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Domino effect in recovery is:",
+    "options": [
+      "Cascading rollbacks",
+      "Fast recovery",
+      "No recovery",
+      "Single rollback"
+    ],
+    "answer": 0,
+    "explanation": "Due to dependencies."
+  },
+  {
+    "id": 49,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Leader election is used in:",
+    "options": ["Fault tolerance", "To choose coordinator", "Both", "None"],
+    "answer": 2,
+    "explanation": "For primary in replication."
+  },
+  {
+    "id": 50,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Heartbeat protocols detect:",
+    "options": ["Failures", "Clocks", "Snapshots", "Consistency"],
+    "answer": 0,
+    "explanation": "Through periodic messages."
+  },
+  {
+    "id": 51,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "FLP impossibility says:",
+    "options": [
+      "Consensus possible in async with failures",
+      "Impossible in async with one crash",
+      "Possible in sync",
+      "Impossible always"
+    ],
+    "answer": 1,
+    "explanation": "FLP theorem."
+  },
+  {
+    "id": 52,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Paxos achieves consensus by:",
+    "options": ["Majority quorums", "All agree", "Leader dictates", "Random"],
+    "answer": 0,
+    "explanation": "Prepare/accept phases."
+  },
+  {
+    "id": 53,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Raft uses:",
+    "options": [
+      "Leader election, log replication",
+      "Only election",
+      "Only replication",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Raft components."
+  },
+  {
+    "id": 54,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "In Raft, term is:",
+    "options": ["Monotonic counter", "Random", "Decreasing", "Constant"],
+    "answer": 0,
+    "explanation": "Increases on elections."
+  },
+  {
+    "id": 55,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "2PC is for:",
+    "options": ["Atomic commit", "Consensus", "Replication", "Snapshots"],
+    "answer": 0,
+    "explanation": "Distributed commit."
+  },
+  {
+    "id": 56,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "3PC avoids:",
+    "options": ["Blocking in 2PC", "All failures", "Crashes", "Partitions"],
+    "answer": 0,
+    "explanation": "Non-blocking but assumes no partitions."
+  },
+  {
+    "id": 57,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "In Paxos, acceptor promises:",
+    "options": [
+      "Not to accept lower proposals",
+      "To accept all",
+      "To reject all",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Promise phase."
+  },
+  {
+    "id": 58,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Raft safety property:",
+    "options": [
+      "Committed log never retracted",
+      "Always progress",
+      "No leader",
+      "All crash"
+    ],
+    "answer": 0,
+    "explanation": "Log matching."
+  },
+  {
+    "id": 59,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Consensus requires:",
+    "options": [
+      "Agreement, validity, termination",
+      "Only agreement",
+      "Only termination",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Properties of consensus."
+  },
+  {
+    "id": 60,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Partial synchrony assumes:",
+    "options": [
+      "Eventual bounds on delays",
+      "Always async",
+      "Sync always",
+      "No bounds"
+    ],
+    "answer": 0,
+    "explanation": "To circumvent FLP."
+  },
+  {
+    "id": 61,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "ACID stands for:",
+    "options": [
+      "Atomicity, Consistency, Isolation, Durability",
+      "All correct, immediate, durable",
+      "Atomic, concurrent, isolated, durable",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "ACID properties."
+  },
+  {
+    "id": 62,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "In the e-commerce scenario, isolation is violated because:",
+    "options": [
+      "Concurrent reads of inventory",
+      "Atomicity failure",
+      "Durability loss",
+      "Consistency negative"
+    ],
+    "answer": 0,
+    "explanation": "Dirty reads or lost updates."
+  },
+  {
+    "id": 63,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "2PC blocks if:",
+    "options": [
+      "Coordinator crashes after prepare",
+      "Participant crashes",
+      "All vote no",
+      "Network ok"
+    ],
+    "answer": 0,
+    "explanation": "Blocking in uncertain state."
+  },
+  {
+    "id": 64,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Serializability means:",
+    "options": [
+      "Equivalent to serial execution",
+      "Parallel always",
+      "No concurrency",
+      "All concurrent"
+    ],
+    "answer": 0,
+    "explanation": "Isolation level."
+  },
+  {
+    "id": 65,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Two-phase locking is:",
+    "options": [
+      "Growing and shrinking phase",
+      "Only growing",
+      "Only shrinking",
+      "No locks"
+    ],
+    "answer": 0,
+    "explanation": "2PL for concurrency control."
+  },
+  {
+    "id": 66,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Deadlock detection uses:",
+    "options": ["Wait-for graph", "Timeouts", "Both", "None"],
+    "answer": 2,
+    "explanation": "Cycles in WFG."
+  },
+  {
+    "id": 67,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Optimistic concurrency control assumes:",
+    "options": ["No conflicts", "Many conflicts", "Locks always", "None"],
+    "answer": 0,
+    "explanation": "Validate at commit."
+  },
+  {
+    "id": 68,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Snapshot isolation avoids:",
+    "options": ["Phantoms", "Write skew", "Both", "None"],
+    "answer": 1,
+    "explanation": "Can have write skew."
+  },
+  {
+    "id": 69,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Distributed transactions use:",
+    "options": ["XA protocol", "Only local", "No commit", "Single phase"],
+    "answer": 0,
+    "explanation": "For 2PC in databases."
+  },
+  {
+    "id": 70,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Saga pattern is for:",
+    "options": [
+      "Long-lived transactions",
+      "Short transactions",
+      "No transactions",
+      "Atomic only"
+    ],
+    "answer": 0,
+    "explanation": "Compensating actions."
+  },
+  {
+    "id": 71,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "CAP theorem: in partition, choose between:",
+    "options": ["C and A", "C and P", "A and P", "All"],
+    "answer": 0,
+    "explanation": "Can't have all three."
+  },
+  {
+    "id": 72,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "PACELC extends CAP with:",
+    "options": [
+      "Else: latency or consistency",
+      "Only partitions",
+      "No else",
+      "Availability only"
+    ],
+    "answer": 0,
+    "explanation": "P: A or C, E: L or C."
+  },
+  {
+    "id": 73,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "PA/EL means:",
+    "options": [
+      "Partition: Availability, Else: Latency",
+      "Partition: Consistency, Else: Latency",
+      "Partition: Availability, Else: Consistency",
+      "Partition: Consistency, Else: Availability"
+    ],
+    "answer": 0,
+    "explanation": "Like Dynamo."
+  },
+  {
+    "id": 74,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "Geo-replication challenges:",
+    "options": ["Latency", "Consistency", "Both", "None"],
+    "answer": 2,
+    "explanation": "Cross-DC issues."
+  },
+  {
+    "id": 75,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "Spanner provides:",
+    "options": [
+      "TrueTime for global consistency",
+      "Eventual",
+      "No consistency",
+      "Local only"
+    ],
+    "answer": 0,
+    "explanation": "External consistency with TrueTime."
+  },
+  {
+    "id": 76,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "In CAP, partition tolerance means:",
+    "options": [
+      "System continues despite network splits",
+      "No partitions",
+      "Always consistent",
+      "Unavailable"
+    ],
+    "answer": 0,
+    "explanation": "Handles partitions."
+  },
+  {
+    "id": 77,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "CP systems:",
+    "options": [
+      "Sacrifice availability",
+      "Sacrifice consistency",
+      "Sacrifice partition tolerance",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Consistent but may be unavailable."
+  },
+  {
+    "id": 78,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "AP systems:",
+    "options": [
+      "Available but inconsistent",
+      "Consistent unavailable",
+      "None",
+      "All"
+    ],
+    "answer": 0,
+    "explanation": "Like Cassandra in some modes."
+  },
+  {
+    "id": 79,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "TrueTime uses:",
+    "options": ["Atomic clocks and GPS", "NTP only", "Lamport", "Vector"],
+    "answer": 0,
+    "explanation": "For bounded uncertainty."
+  },
+  {
+    "id": 80,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "In geo-distributed, multi-master replication can lead to:",
+    "options": [
+      "Conflicts",
+      "No conflicts",
+      "Always consistent",
+      "Unavailable"
+    ],
+    "answer": 0,
+    "explanation": "Need conflict resolution."
+  },
+  {
+    "id": 81,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "MapReduce is for:",
+    "options": [
+      "Large-scale data processing",
+      "Small data",
+      "Real-time",
+      "Transactions"
+    ],
+    "answer": 0,
+    "explanation": "Batch processing."
+  },
+  {
+    "id": 82,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "In MapReduce, map phase:",
+    "options": ["Produces key-value pairs", "Reduces", "Shuffles", "Sorts"],
+    "answer": 0,
+    "explanation": "Intermediate KVs."
+  },
+  {
+    "id": 83,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Shuffle phase is:",
+    "options": ["Network intensive", "CPU intensive", "Disk free", "None"],
+    "answer": 0,
+    "explanation": "Data transfer to reducers."
+  },
+  {
+    "id": 84,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Combiner is:",
+    "options": ["Mini-reducer", "Mapper", "Sorter", "Partitioner"],
+    "answer": 0,
+    "explanation": "Reduces network load."
+  },
+  {
+    "id": 85,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Spark uses:",
+    "options": [
+      "RDDs for in-memory processing",
+      "Disk only",
+      "Batch only",
+      "No fault tolerance"
+    ],
+    "answer": 0,
+    "explanation": "Resilient Distributed Datasets."
+  },
+  {
+    "id": 86,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Spark advantage over MapReduce:",
+    "options": ["Faster due to memory", "Slower", "No DAG", "Batch only"],
+    "answer": 0,
+    "explanation": "In-memory computing."
+  },
+  {
+    "id": 87,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "DAG in Spark is:",
+    "options": [
+      "Directed Acyclic Graph for operations",
+      "Data graph",
+      "Dependency graph",
+      "All"
+    ],
+    "answer": 0,
+    "explanation": "For optimization."
+  },
+  {
+    "id": 88,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Spark fault tolerance:",
+    "options": ["Lineage recomputation", "Checkpoints", "Both", "None"],
+    "answer": 2,
+    "explanation": "RDD lineage."
+  },
+  {
+    "id": 89,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "MapReduce fault tolerance:",
+    "options": ["Rerun failed tasks", "No tolerance", "Full job rerun", "None"],
+    "answer": 0,
+    "explanation": "Speculative execution too."
+  },
+  {
+    "id": 90,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Word count in MapReduce:",
+    "options": [
+      "Map emits (word,1), reduce sums",
+      "Map sums",
+      "Reduce emits",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Classic example."
+  },
+  {
+    "id": 91,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "What is middleware in distributed systems?",
+    "options": [
+      "Hardware",
+      "Software layer for transparency",
+      "Network",
+      "Applications"
+    ],
+    "answer": 1,
+    "explanation": "Provides common services."
+  },
+  {
+    "id": 92,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Openness means:",
+    "options": [
+      "Interoperability and portability",
+      "Closed source",
+      "Proprietary",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Standards-based."
+  },
+  {
+    "id": 93,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Reliability in distributed systems is challenging because of:",
+    "options": [
+      "Partial failures",
+      "All succeed",
+      "No failures",
+      "Central control"
+    ],
+    "answer": 0,
+    "explanation": "Hard to detect."
+  },
+  {
+    "id": 94,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Performance metrics include:",
+    "options": [
+      "Throughput, response time",
+      "Only throughput",
+      "Only time",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Key metrics."
+  },
+  {
+    "id": 95,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Security in distributed systems involves:",
+    "options": [
+      "Confidentiality, integrity, availability",
+      "Only confidentiality",
+      "Only availability",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "CIA triad."
+  },
+  {
+    "id": 96,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "Multicast is:",
+    "options": ["One to many", "One to one", "Many to one", "Many to many"],
+    "answer": 0,
+    "explanation": "Group communication."
+  },
+  {
+    "id": 97,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "Ordered multicast ensures:",
+    "options": ["Order of messages", "No order", "Random order", "None"],
+    "answer": 0,
+    "explanation": "FIFO, causal, total."
+  },
+  {
+    "id": 98,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "Reliable multicast:",
+    "options": [
+      "All receive or none",
+      "Some receive",
+      "No guarantee",
+      "One receives"
+    ],
+    "answer": 0,
+    "explanation": "Atomic multicast."
+  },
+  {
+    "id": 99,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "gRPC supports:",
+    "options": ["Streaming", "Unary only", "No streaming", "Batch only"],
+    "answer": 0,
+    "explanation": "Bi-directional streaming."
+  },
+  {
+    "id": 100,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "Kafka is a:",
+    "options": ["Messaging system", "RPC", "Database", "File system"],
+    "answer": 0,
+    "explanation": "Distributed streaming platform."
+  },
+  {
+    "id": 101,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Matrix clocks are extension of:",
+    "options": ["Vector clocks", "Lamport", "Physical", "None"],
+    "answer": 0,
+    "explanation": "For causal multicast."
+  },
+  {
+    "id": 102,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Global state is:",
+    "options": [
+      "Local states + channels",
+      "Only local",
+      "Only channels",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "For snapshots."
+  },
+  {
+    "id": 103,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Cut in snapshots is:",
+    "options": ["Set of events", "Time line", "Process line", "None"],
+    "answer": 0,
+    "explanation": "Frontier."
+  },
+  {
+    "id": 104,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Consistent cut:",
+    "options": ["No future events", "Causality preserved", "Both", "None"],
+    "answer": 1,
+    "explanation": "No receive without send."
+  },
+  {
+    "id": 105,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Berkeley algorithm for clock sync is:",
+    "options": ["Centralized", "Decentralized", "P2P", "None"],
+    "answer": 0,
+    "explanation": "Master averages."
+  },
+  {
+    "id": 106,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Read-one-write-all is:",
+    "options": ["Strong consistency", "Eventual", "Causal", "None"],
+    "answer": 0,
+    "explanation": "But low availability."
+  },
+  {
+    "id": 107,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Gossip protocols for:",
+    "options": [
+      "Eventual consistency",
+      "Strong",
+      "No consistency",
+      "Transactions"
+    ],
+    "answer": 0,
+    "explanation": "Epidemic propagation."
+  },
+  {
+    "id": 108,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Anti-entropy is:",
+    "options": ["Push-pull reconciliation", "Only push", "Only pull", "None"],
+    "answer": 0,
+    "explanation": "For replicas sync."
+  },
+  {
+    "id": 109,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Merkle trees for:",
+    "options": ["Efficient sync", "Hashing", "Both", "None"],
+    "answer": 2,
+    "explanation": "Detect differences."
+  },
+  {
+    "id": 110,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "CRDTs provide:",
+    "options": [
+      "Conflict-free replicated data types",
+      "Conflicts always",
+      "No replication",
+      "Centralized"
+    ],
+    "answer": 0,
+    "explanation": "Merge without conflicts."
+  },
+  {
+    "id": 111,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "k-fault tolerant means:",
+    "options": ["Tolerates k failures", "Fails on k", "None", "All"],
+    "answer": 0,
+    "explanation": "Continues with k failed."
+  },
+  {
+    "id": 112,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Redundancy for fault tolerance:",
+    "options": [
+      "Hardware, software, information",
+      "Only hardware",
+      "Only software",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Multiple types."
+  },
+  {
+    "id": 113,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Process resilience using:",
+    "options": ["Groups", "Single process", "No resilience", "All"],
+    "answer": 0,
+    "explanation": "Replicated groups."
+  },
+  {
+    "id": 114,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Virtual synchrony is:",
+    "options": [
+      "Messages and views atomic",
+      "Async",
+      "No sync",
+      "Physical sync"
+    ],
+    "answer": 0,
+    "explanation": "For group communication."
+  },
+  {
+    "id": 115,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Paxos for fault tolerance in:",
+    "options": ["Replication", "Only consensus", "No FT", "Single"],
+    "answer": 0,
+    "explanation": "State machine replication."
+  },
+  {
+    "id": 116,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Bullyn algorithm for:",
+    "options": ["Leader election", "Consensus", "Snapshots", "Clocks"],
+    "answer": 0,
+    "explanation": "Simple election."
+  },
+  {
+    "id": 117,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Ring election:",
+    "options": ["Circulates messages", "Central", "P2P", "None"],
+    "answer": 0,
+    "explanation": "Token ring style."
+  },
+  {
+    "id": 118,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Multi-Paxos optimizes:",
+    "options": ["Multiple rounds", "Single round", "No optimization", "All"],
+    "answer": 0,
+    "explanation": "Stable leader."
+  },
+  {
+    "id": 119,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "ZAB is for:",
+    "options": ["ZooKeeper atomic broadcast", "Consensus", "Both", "None"],
+    "answer": 2,
+    "explanation": "Like Paxos for ZK."
+  },
+  {
+    "id": 120,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Viewstamped replication is:",
+    "options": ["Similar to Paxos", "Different", "No replication", "Single"],
+    "answer": 0,
+    "explanation": "Early SMR."
+  },
+  {
+    "id": 121,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "X/Open DTP model:",
+    "options": [
+      "Transaction manager, resource managers",
+      "Only TM",
+      "Only RM",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Standard for distributed tx."
+  },
+  {
+    "id": 122,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Nested transactions:",
+    "options": ["Subtransactions", "Flat only", "No nesting", "All"],
+    "answer": 0,
+    "explanation": "Hierarchical."
+  },
+  {
+    "id": 123,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Timestamp ordering:",
+    "options": ["Assigns TS to tx", "Locks", "Optimistic", "None"],
+    "answer": 0,
+    "explanation": "For concurrency."
+  },
+  {
+    "id": 124,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Multiversion concurrency control:",
+    "options": ["Keeps versions", "Single version", "No versions", "All"],
+    "answer": 0,
+    "explanation": "For reads."
+  },
+  {
+    "id": 125,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Pessimistic vs optimistic:",
+    "options": [
+      "Lock early vs validate late",
+      "Both same",
+      "No difference",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Trade-offs."
+  },
+  {
+    "id": 126,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "Harvest and yield in tunable consistency:",
+    "options": [
+      "Completeness and probability",
+      "Only harvest",
+      "Only yield",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Probabilistic quorums."
+  },
+  {
+    "id": 127,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "Tunable consistency in Cassandra:",
+    "options": ["Per operation", "Global", "No tune", "Fixed"],
+    "answer": 0,
+    "explanation": "ONE, QUORUM, ALL."
+  },
+  {
+    "id": 128,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "CockroachDB is:",
+    "options": ["CP", "AP", "CA", "None"],
+    "answer": 0,
+    "explanation": "Serializable with geo."
+  },
+  {
+    "id": 129,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "Aurora is:",
+    "options": ["Multi-region DB", "Single region", "No geo", "Local"],
+    "answer": 0,
+    "explanation": "AWS geo DB."
+  },
+  {
+    "id": 130,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "Consistency rationing is:",
+    "options": ["Adaptive consistency", "Fixed", "No consistency", "All"],
+    "answer": 0,
+    "explanation": "Based on load."
+  },
+  {
+    "id": 131,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "YARN is:",
+    "options": [
+      "Resource manager for Hadoop",
+      "Data manager",
+      "No manager",
+      "Spark only"
+    ],
+    "answer": 0,
+    "explanation": "Yet Another Resource Negotiator."
+  },
+  {
+    "id": 132,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Spark SQL is for:",
+    "options": ["Structured data", "Unstructured", "No data", "Batch only"],
+    "answer": 0,
+    "explanation": "DataFrames."
+  },
+  {
+    "id": 133,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Spark streaming:",
+    "options": ["Micro-batch", "Continuous", "Both", "None"],
+    "answer": 2,
+    "explanation": "Structured streaming."
+  },
+  {
+    "id": 134,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "HDFS is:",
+    "options": ["Distributed file system", "Local FS", "No FS", "Memory"],
+    "answer": 0,
+    "explanation": "For MapReduce."
+  },
+  {
+    "id": 135,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Tez is:",
+    "options": ["DAG engine for Hadoop", "MapReduce only", "Spark", "None"],
+    "answer": 0,
+    "explanation": "Better than MR."
+  },
+  {
+    "id": 136,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Spark cache:",
+    "options": ["Persist RDDs", "No cache", "Disk only", "All"],
+    "answer": 0,
+    "explanation": "For reuse."
+  },
+  {
+    "id": 137,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Partitioning in MapReduce:",
+    "options": ["Hash or custom", "No partition", "Random only", "None"],
+    "answer": 0,
+    "explanation": "To reducers."
+  },
+  {
+    "id": 138,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Join in Spark:",
+    "options": ["Broadcast, shuffle", "No join", "Local join", "All"],
+    "answer": 0,
+    "explanation": "Types of joins."
+  },
+  {
+    "id": 139,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Accumulator in Spark:",
+    "options": ["Shared variables", "Local", "No share", "None"],
+    "answer": 0,
+    "explanation": "For aggregations."
+  },
+  {
+    "id": 140,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Broadcast variables:",
+    "options": ["Read-only shared", "Write shared", "No share", "Local"],
+    "answer": 0,
+    "explanation": "Efficient distribution."
+  },
+  {
+    "id": 141,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Cloud computing is a type of:",
+    "options": ["Distributed system", "Centralized", "Local", "None"],
+    "answer": 0,
+    "explanation": "Large-scale DS."
+  },
+  {
+    "id": 142,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "REST is:",
+    "options": ["RPC-like over HTTP", "Not RPC", "Message only", "None"],
+    "answer": 0,
+    "explanation": "Stateless."
+  },
+  {
+    "id": 143,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "GPS for clock sync accuracy:",
+    "options": ["Nanoseconds", "Seconds", "Minutes", "Hours"],
+    "answer": 0,
+    "explanation": "High precision."
+  },
+  {
+    "id": 144,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Bayou is for:",
+    "options": ["Mobile eventual consistency", "Strong", "No mobile", "Fixed"],
+    "answer": 0,
+    "explanation": "Disconnected operation."
+  },
+  {
+    "id": 145,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Triple modular redundancy:",
+    "options": ["3 replicas, vote", "1 replica", "2 replicas", "None"],
+    "answer": 0,
+    "explanation": "For hardware FT."
+  },
+  {
+    "id": 146,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Ben-Or algorithm is:",
+    "options": [
+      "Randomized consensus",
+      "Deterministic",
+      "No consensus",
+      "Single"
+    ],
+    "answer": 0,
+    "explanation": "For async."
+  },
+  {
+    "id": 147,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "CCI is:",
+    "options": [
+      "Cache coherence in transactions",
+      "No cache",
+      "Local cache",
+      "All"
+    ],
+    "answer": 0,
+    "explanation": "For distributed DB."
+  },
+  {
+    "id": 148,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "RedBlue consistency:",
+    "options": [
+      "Mix strong and eventual",
+      "All strong",
+      "All eventual",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Per operation."
+  },
+  {
+    "id": 149,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Graph processing in Spark:",
+    "options": ["GraphX", "No graph", "MapReduce graph", "All"],
+    "answer": 0,
+    "explanation": "Graph library."
+  },
+  {
+    "id": 150,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "MLlib is:",
+    "options": ["Machine learning in Spark", "No ML", "External", "None"],
+    "answer": 0,
+    "explanation": "Built-in ML."
+  },
+  {
+    "id": 151,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Grid computing is:",
+    "options": ["Distributed for scientific", "Commercial", "Local", "None"],
+    "answer": 0,
+    "explanation": "High-performance."
+  },
+  {
+    "id": 152,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "AMQP is:",
+    "options": ["Messaging protocol", "RPC", "HTTP", "None"],
+    "answer": 0,
+    "explanation": "For queues."
+  },
+  {
+    "id": 153,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Hybrid logical clocks combine:",
+    "options": [
+      "Logical and physical",
+      "Only logical",
+      "Only physical",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "HLC for causality and time."
+  },
+  {
+    "id": 154,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Sequential consistency is:",
+    "options": [
+      "All see same order",
+      "Different orders",
+      "No order",
+      "Physical order"
+    ],
+    "answer": 0,
+    "explanation": "But not linearizable."
+  },
+  {
+    "id": 155,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Active replication:",
+    "options": ["All execute", "Passive backup", "No replication", "Single"],
+    "answer": 0,
+    "explanation": "For FT."
+  },
+  {
+    "id": 156,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "HoneyBadger BFT is:",
+    "options": ["Async BFT", "Sync", "No BFT", "Partial"],
+    "answer": 0,
+    "explanation": "Asynchronous BFT."
+  },
+  {
+    "id": 157,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Calvin is:",
+    "options": [
+      "Deterministic tx processing",
+      "Nondeterministic",
+      "No tx",
+      "Local"
+    ],
+    "answer": 0,
+    "explanation": "For distributed DB."
+  },
+  {
+    "id": 158,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "PBS is:",
+    "options": [
+      "Probabilistically bounded staleness",
+      "No bound",
+      "Always stale",
+      "Fresh always"
+    ],
+    "answer": 0,
+    "explanation": "For eventual systems."
+  },
+  {
+    "id": 159,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Flink is similar to Spark but:",
+    "options": ["True streaming", "Micro-batch", "Batch only", "None"],
+    "answer": 0,
+    "explanation": "Continuous operators."
+  },
+  {
+    "id": 160,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Beam is:",
+    "options": [
+      "Portable API for processing",
+      "Spark only",
+      "MapReduce only",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Unified model."
+  },
+  {
+    "id": 161,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "IoT is:",
+    "options": ["Distributed edge computing", "Central", "No dist", "Local"],
+    "answer": 0,
+    "explanation": "Devices network."
+  },
+  {
+    "id": 162,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "WebSockets for:",
+    "options": ["Full duplex", "Half", "No duplex", "Batch"],
+    "answer": 0,
+    "explanation": "Real-time."
+  },
+  {
+    "id": 163,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Clock condition in Lamport:",
+    "options": ["C1, C2", "Only C1", "Only C2", "None"],
+    "answer": 0,
+    "explanation": "Increment and max."
+  },
+  {
+    "id": 164,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Processor consistency is:",
+    "options": ["Weaker than sequential", "Stronger", "Same", "None"],
+    "answer": 0,
+    "explanation": "Per variable."
+  },
+  {
+    "id": 165,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "Passive replication:",
+    "options": [
+      "Primary executes, backups update",
+      "All execute",
+      "No execute",
+      "Single"
+    ],
+    "answer": 0,
+    "explanation": "For FT."
+  },
+  {
+    "id": 166,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "Egalitarian Paxos is:",
+    "options": ["Leaderless", "Leader based", "No Paxos", "Single"],
+    "answer": 0,
+    "explanation": "EPaxos."
+  },
+  {
+    "id": 167,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "BOCC is:",
+    "options": ["Backward optimistic CC", "Forward", "Pessimistic", "None"],
+    "answer": 0,
+    "explanation": "Variant of OCC."
+  },
+  {
+    "id": 168,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "ChainReplication with Apologize is:",
+    "options": ["CRAQ", "No chain", "Simple chain", "None"],
+    "answer": 0,
+    "explanation": "Multicast for reads."
+  },
+  {
+    "id": 169,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Presto is:",
+    "options": ["SQL on Hadoop", "No SQL", "Spark SQL", "None"],
+    "answer": 0,
+    "explanation": "Fast query."
+  },
+  {
+    "id": 170,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Hive is:",
+    "options": ["SQL-like on MapReduce", "No SQL", "Real-time", "Transactions"],
+    "answer": 0,
+    "explanation": "Data warehouse."
+  },
+  {
+    "id": 171,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Blockchain is a:",
+    "options": ["Distributed ledger", "Central ledger", "No ledger", "Local"],
+    "answer": 0,
+    "explanation": "Decentralized DS."
+  },
+  {
+    "id": 172,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "ZeroMQ is:",
+    "options": ["Messaging library", "RPC", "HTTP", "None"],
+    "answer": 0,
+    "explanation": "High-performance."
+  },
+  {
+    "id": 173,
+    "lecture": "Lecture 3 - Logical Time, Clocks, Snapshots",
+    "question": "Interval tree clocks are:",
+    "options": ["For dynamic processes", "Static", "No clocks", "Physical"],
+    "answer": 0,
+    "explanation": "Extension of vector."
+  },
+  {
+    "id": 174,
+    "lecture": "Lecture 4 - Replication and Consistency Models",
+    "question": "Release consistency is:",
+    "options": [
+      "Acquire-release",
+      "Full consistency",
+      "No consistency",
+      "Eventual"
+    ],
+    "answer": 0,
+    "explanation": "Weaker model."
+  },
+  {
+    "id": 175,
+    "lecture": "Lecture 5 - Fault Tolerance and Recovery",
+    "question": "N-modular redundancy:",
+    "options": ["Generalization of TMR", "Single", "No redundancy", "All"],
+    "answer": 0,
+    "explanation": "Voting."
+  },
+  {
+    "id": 176,
+    "lecture": "Lecture 6 - Consensus and Agreement Protocols",
+    "question": "PBFT is:",
+    "options": ["Practical BFT", "Theoretical", "No BFT", "Async"],
+    "answer": 0,
+    "explanation": "3 phases."
+  },
+  {
+    "id": 177,
+    "lecture": "Lecture 7 - Distributed Transactions & Commit",
+    "question": "Spanner transactions are:",
+    "options": ["Global with TrueTime", "Local only", "No tx", "Single"],
+    "answer": 0,
+    "explanation": "External consistency."
+  },
+  {
+    "id": 178,
+    "lecture": "Lecture 8 - Consistency, CAP & Geo-Distributed Systems",
+    "question": "Pileus is:",
+    "options": [
+      "Latency-optimized consistency",
+      "No opt",
+      "Fixed latency",
+      "All"
+    ],
+    "answer": 0,
+    "explanation": "SLA-based."
+  },
+  {
+    "id": 179,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Impala is:",
+    "options": ["SQL on Hadoop", "Batch", "Stream", "None"],
+    "answer": 0,
+    "explanation": "MPP query."
+  },
+  {
+    "id": 180,
+    "lecture": "Lecture 9 - Distributed Data Processing (MapReduce / Spark)",
+    "question": "Pig is:",
+    "options": ["Scripting for MapReduce", "SQL", "No script", "Java only"],
+    "answer": 0,
+    "explanation": "PigLatin."
+  },
+  {
+    "id": 181,
+    "lecture": "Lecture 1 - Introduction to Distributed Systems",
+    "question": "Pervasive computing is:",
+    "options": ["Ubiquitous DS", "Not distributed", "Central", "Local"],
+    "answer": 0,
+    "explanation": "Everywhere."
+  },
+  {
+    "id": 182,
+    "lecture": "Lecture 2 - Communication, RPC, Messaging",
+    "question": "DDS is:",
+    "options": ["Data Distribution Service", "No service", "RPC", "HTTP"],
+    "answer": 0,
+    "explanation": "For real-time."
+  }
+]
