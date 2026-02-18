@@ -96,7 +96,7 @@ def main_menu(questions, quiz_type):
             return  # Return to quiz type selection
         elif choice == 6:
             clear()
-            print(f"\n  {GR}{B}Good luck on your Distributed Computing final! 🚀{R}\n")
+            print(f"\n  {GR}{B}Good luck on your Distributed Computing final!{R}\n")
             break
 
 def quick_quiz(questions):
@@ -157,12 +157,12 @@ def run_quiz(questions, label="Quiz"):
         print()
         if chosen_orig == correct_orig:
             score += 1
-            print(f"  {GR}{B}✔ Correct!{R}")
+            print(f"  {GR}{B}Correct!{R}")
         else:
             wrong.append(q)
-            print(f"  {RD}{B}✘ Wrong.{R}  Correct: {GR}[{correct_letter}] {q['options'][correct_orig]}{R}")
+            print(f"  {RD}{B}Wrong.{R}  Correct: {GR}[{correct_letter}] {q['options'][correct_orig]}{R}")
 
-        print(f"\n  {DIM}💡 {q['explanation']}{R}")
+        print(f"\n  {DIM}Note: {q['explanation']}{R}")
         divider()
         input(f"\n  {DIM}Press Enter for next...{R}")
 
@@ -188,8 +188,8 @@ def show_results(score, total, wrong, mins, secs, label):
     if wrong:
         print(f"  {RD}{B}Missed questions:{R}")
         for q in wrong:
-            print(f"\n  {YL}•{R} {q['question']}")
-            print(f"    {GR}✔ {q['options'][q['answer']]}{R}")
+            print(f"\n  {YL}* {q['question']}")
+            print(f"    {GR}-> {q['options'][q['answer']]}{R}")
 
     divider()
     input(f"\n  {DIM}Press Enter to return...{R}")
