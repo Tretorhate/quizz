@@ -54,18 +54,35 @@ def prompt_int(msg, lo, hi):
         except ValueError:
             print(f"{RD}  Please enter a valid number.{R}")
 
-def main_menu(questions):
-    lectures = get_lectures(questions)
+def select_quiz_type():
+    """Let user choose between Easy and Complex questions."""
     while True:
         clear()
         banner()
+        print(f"  {WH}{B}SELECT QUIZ TYPE{R}\n")
+        print(f"  {BL}1{R}  ›  {WH}Easy{R}  {DIM}(simpler questions){R}")
+        print(f"  {BL}2{R}  ›  {WH}Complex{R}  {DIM}(advanced questions){R}\n")
+        choice = prompt_int(f"  {CY}Choose (1-2): {R}", 1, 2)
+        if choice == 1:
+            return "questions.json", "Easy"
+        else:
+            return "questions_complex.json", "Complex"
+
+def main_menu(questions, quiz_type):
+    lectures = get_lectures(questions)
+    total_questions = len(questions)
+    while True:
+        clear()
+        banner()
+        print(f"  {DIM}Quiz Type: {quiz_type}{R}\n")
         print(f"  {WH}{B}MAIN MENU{R}\n")
-        print(f"  {BL}1{R}  ›  {WH}Full Exam (182 questions){R}")
+        print(f"  {BL}1{R}  ›  {WH}Full Exam ({total_questions} questions){R}")
         print(f"  {BL}2{R}  ›  {WH}Quick Quiz (random){R}")
         print(f"  {BL}3{R}  ›  {WH}Quiz by Lecture{R}")
         print(f"  {BL}4{R}  ›  {WH}Score History{R}")
-        print(f"  {BL}5{R}  ›  {WH}Quit{R}\n")
-        choice = prompt_int(f"  {CY}Choose (1-5): {R}", 1, 5)
+        print(f"  {BL}5{R}  ›  {WH}Switch Quiz Type{R}")
+        print(f"  {BL}6{R}  ›  {WH}Quit{R}\n")
+        choice = prompt_int(f"  {CY}Choose (1-6): {R}", 1, 6)
 
         if choice == 1:
             run_quiz(questions, label="Full Final Exam")
@@ -76,6 +93,8 @@ def main_menu(questions):
         elif choice == 4:
             show_history()
         elif choice == 5:
+            return  # Return to quiz type selection
+        elif choice == 6:
             clear()
             print(f"\n  {GR}{B}Good luck on your Distributed Computing final! 🚀{R}\n")
             break
@@ -209,5 +228,7 @@ def show_history():
     input(f"\n  {DIM}Press Enter...{R}")
 
 if __name__ == "__main__":
-    questions = load_questions()
-    main_menu(questions)
+    while True:
+        question_file, quiz_type = select_quiz_type()
+        questions = load_questions(question_file)
+        main_menu(questions, quiz_type)
