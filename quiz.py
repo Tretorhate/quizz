@@ -22,14 +22,14 @@ def clear():
 
 def banner():
     print(f"{CY}{B}")
-    print("  ╔══════════════════════════════════════════════════════╗")
-    print("  ║     DISTRIBUTED COMPUTING — FINAL EXAM PREP          ║")
-    print("  ║               Astana IT University                   ║")
-    print("  ╚══════════════════════════════════════════════════════╝")
+    print("  +======================================================+")
+    print("  |        SOFTWARE ENGINEERING - EXAM PREP              |")
+    print("  |               Astana IT University                   |")
+    print("  +======================================================+")
     print(f"{R}")
 
 def divider():
-    print(f"{DIM}  {'─' * 60}{R}")
+    print(f"{DIM}  {'-' * 60}{R}")
 
 def load_questions(path="questions.json"):
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -55,18 +55,33 @@ def prompt_int(msg, lo, hi):
             print(f"{RD}  Please enter a valid number.{R}")
 
 def select_quiz_type():
-    """Let user choose between Easy and Complex questions."""
+    """Let user choose quiz type from available categories."""
+    quiz_options = [
+        ("questions.json", "Distributed Computing - Easy"),
+        ("questions_complex.json", "Distributed Computing - Complex"),
+        ("questions_capstone_endterm.json", "Capstone - Endterm"),
+        ("questions_capstone_lecture_based.json", "Capstone - Lecture Based"),
+        ("questions_capstone_book_chapters.json", "Capstone - Book Chapters"),
+    ]
+    
     while True:
         clear()
         banner()
         print(f"  {WH}{B}SELECT QUIZ TYPE{R}\n")
-        print(f"  {BL}1{R}  ›  {WH}Easy{R}  {DIM}(simpler questions){R}")
-        print(f"  {BL}2{R}  ›  {WH}Complex{R}  {DIM}(advanced questions){R}\n")
-        choice = prompt_int(f"  {CY}Choose (1-2): {R}", 1, 2)
-        if choice == 1:
-            return "questions.json", "Easy"
-        else:
-            return "questions_complex.json", "Complex"
+        
+        # Load and display each option with question count
+        for i, (path, name) in enumerate(quiz_options, 1):
+            try:
+                with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), path), encoding="utf-8") as f:
+                    count = len(json.load(f))
+            except:
+                count = "?"
+            print(f"  {BL}{i}{R}  >  {WH}{name}{R}  {DIM}({count} questions){R}")
+        
+        print()
+        choice = prompt_int(f"  {CY}Choose (1-{len(quiz_options)}): {R}", 1, len(quiz_options))
+        path, name = quiz_options[choice - 1]
+        return path, name
 
 def main_menu(questions, quiz_type):
     lectures = get_lectures(questions)
@@ -76,12 +91,12 @@ def main_menu(questions, quiz_type):
         banner()
         print(f"  {DIM}Quiz Type: {quiz_type}{R}\n")
         print(f"  {WH}{B}MAIN MENU{R}\n")
-        print(f"  {BL}1{R}  ›  {WH}Full Exam ({total_questions} questions){R}")
-        print(f"  {BL}2{R}  ›  {WH}Quick Quiz (random){R}")
-        print(f"  {BL}3{R}  ›  {WH}Quiz by Lecture{R}")
-        print(f"  {BL}4{R}  ›  {WH}Score History{R}")
-        print(f"  {BL}5{R}  ›  {WH}Switch Quiz Type{R}")
-        print(f"  {BL}6{R}  ›  {WH}Quit{R}\n")
+        print(f"  {BL}1{R}  >  {WH}Full Exam ({total_questions} questions){R}")
+        print(f"  {BL}2{R}  >  {WH}Quick Quiz (random){R}")
+        print(f"  {BL}3{R}  >  {WH}Quiz by Lecture{R}")
+        print(f"  {BL}4{R}  >  {WH}Score History{R}")
+        print(f"  {BL}5{R}  >  {WH}Switch Quiz Type{R}")
+        print(f"  {BL}6{R}  >  {WH}Quit{R}\n")
         choice = prompt_int(f"  {CY}Choose (1-6): {R}", 1, 6)
 
         if choice == 1:
@@ -96,7 +111,7 @@ def main_menu(questions, quiz_type):
             return  # Return to quiz type selection
         elif choice == 6:
             clear()
-            print(f"\n  {GR}{B}Good luck on your Distributed Computing final!{R}\n")
+            print(f"\n  {GR}{B}Good luck on your exam!{R}\n")
             break
 
 def quick_quiz(questions):
@@ -112,7 +127,7 @@ def lecture_quiz(questions, lectures):
     print(f"  {WH}{B}QUIZ BY LECTURE{R}\n")
     for i, lec in enumerate(lectures, 1):
         count = sum(1 for q in questions if q["lecture"] == lec)
-        print(f"  {BL}{i}{R}  ›  {WH}{lec}{R}  {DIM}({count} questions){R}")
+        print(f"  {BL}{i}{R}  >  {WH}{lec}{R}  {DIM}({count} questions){R}")
     print()
     choice = prompt_int(f"  {CY}Choose lecture (1-{len(lectures)}): {R}", 1, len(lectures))
     chosen = lectures[choice - 1]
@@ -177,7 +192,7 @@ def show_results(score, total, wrong, mins, secs, label):
     grade = "EXCELLENT" if pct >= 90 else "GOOD" if pct >= 75 else "PASS" if pct >= 60 else "NEEDS WORK"
     color = GR if pct >= 75 else YL if pct >= 60 else RD
 
-    print(f"  {WH}{B}RESULTS — {label}{R}")
+    print(f"  {WH}{B}RESULTS - {label}{R}")
     divider()
     print(f"\n  Score   :  {color}{B}{score}/{total} ({pct:.1f}%){R}")
     print(f"  Grade   :  {color}{B}{grade}{R}")

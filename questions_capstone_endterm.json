@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "lecture": "Capstone - Endterm",
+    "question": "Which chain is most consistent with the lecture's terminology?",
+    "options": [
+      "Error → Fault → Failure",
+      "Failure may lead to Fault; Fault may lead to Error",
+      "Fault may lead to Error; Error may lead to Failure (but not always)",
+      "Fault → Failure → Error"
+    ],
+    "answer": 2,
+    "explanation": "The correct chain in dependability terminology is: a Fault (defect) may lead to an Error (incorrect internal state), which may lead to a Failure (observable incorrect behavior), though not every error results in failure."
+  },
+  {
+    "id": 2,
+    "lecture": "Capstone - Endterm",
+    "question": "In the 4 + 1 view model, which view focuses on how the system is composed of interacting processes at run-time?",
+    "options": [
+      "Process view",
+      "Logical view",
+      "Development view",
+      "Physical view"
+    ],
+    "answer": 0,
+    "explanation": "The Process view in the 4+1 model addresses the dynamic aspects of the system, showing how processes communicate and interact during execution."
+  },
+  {
+    "id": 3,
+    "lecture": "Capstone - Endterm",
+    "question": "Which is a realistic reason MDA/MDE adoption can be limited (and makes \"agile + MDA\" tricky)?",
+    "options": [
+      "MDA eliminates the need for requirements engineering",
+      "Models cannot represent system context",
+      "Transformations require specialized tool support and extensive up-front modeling can conflict with agile values",
+      "UML does not support class diagrams"
+    ],
+    "answer": 2,
+    "explanation": "MDA requires significant upfront modeling and specialized tools, which conflicts with agile's iterative approach and emphasis on working software over comprehensive documentation."
+  },
+  {
+    "id": 4,
+    "lecture": "Capstone - Endterm",
+    "question": "Which is a key reason statistical reliability testing data cannot simply reuse normal defect-testing data?",
+    "options": [
+      "Defect testing data is usually atypical of real operational usage patterns",
+      "Reliability testing requires no failures at all",
+      "Defect testing always uses formal proofs",
+      "Reliability testing ignores specifications"
+    ],
+    "answer": 0,
+    "explanation": "Defect testing focuses on finding bugs using artificial test cases, while reliability testing requires data that reflects actual user operational profiles to measure failure probability accurately."
+  },
+  {
+    "id": 5,
+    "lecture": "Capstone - Endterm",
+    "question": "Why can \"refactoring the architecture\" be especially expensive in agile projects?",
+    "options": [
+      "It only affects UI components",
+      "It affects many components and cross-cutting dependencies",
+      "It is cheaper than refactoring code",
+      "It is prohibited by UML"
+    ],
+    "answer": 1,
+    "explanation": "Architectural refactoring impacts multiple components and their interconnections, making changes propagate throughout the system and requiring extensive rework and retesting."
+  },
+  {
+    "id": 6,
+    "lecture": "Capstone - Endterm",
+    "question": "Which statement best distinguishes reliability vs availability?",
+    "options": [
+      "Reliability is probability of failure-free operation over time; availability is probability system is operational at a point in time",
+      "Both mean the same thing in critical systems",
+      "Reliability is subjective; availability is always subjective",
+      "Reliability is \"up-time\"; availability is \"failure-free operation\""
+    ],
+    "answer": 0,
+    "explanation": "Reliability measures continuous failure-free operation over time, while availability measures the proportion of time the system is functional regardless of failures."
+  },
+  {
+    "id": 7,
+    "lecture": "Capstone - Endterm",
+    "question": "\"Subsystems exchange large amounts of shared data efficiently via a central store\" describes which pattern most precisely?",
+    "options": ["Repository", "Client–server", "Pipe-and-filter", "Layered"],
+    "answer": 0,
+    "explanation": "The Repository pattern centralizes data storage where all subsystems access and modify shared data through a common store, enabling efficient data exchange."
+  },
+  {
+    "id": 8,
+    "lecture": "Capstone - Endterm",
+    "question": "Which option best captures the difference between redundancy and diversity (as used to improve dependability)?",
+    "options": [
+      "Diversity only applies to hardware, redundancy only to software",
+      "Both mean \"more testing\"",
+      "Redundancy = backup components; Diversity = same functionality implemented differently to avoid common-mode failures",
+      "Redundancy = same function in different ways; Diversity = backup copy"
+    ],
+    "answer": 2,
+    "explanation": "Redundancy provides duplicate components, while diversity implements the same functionality through different designs/technologies to prevent common-mode failures."
+  },
+  {
+    "id": 9,
+    "lecture": "Capstone - Endterm",
+    "question": "Which pairing is most accurate?",
+    "options": [
+      "Context model = dynamic; Interaction model = structural",
+      "Context model = structural; Interaction model = dynamic",
+      "Context model = data-driven; Interaction model = event-driven",
+      "Context model = behavioral; Interaction model = structural"
+    ],
+    "answer": 1,
+    "explanation": "Context models show the structural relationship between a system and its environment, while interaction models capture the dynamic behavior and communication flows."
+  },
+  {
+    "id": 10,
+    "lecture": "Capstone - Endterm",
+    "question": "Which dependability property is defined as \"probability the system will be up and running and able to deliver useful services\"?",
+    "options": ["Availability", "Safety", "Resilience", "Reliability"],
+    "answer": 0,
+    "explanation": "Availability specifically measures the readiness of a system to deliver correct services at any given time, regardless of whether it has experienced failures."
+  },
+  {
+    "id": 11,
+    "lecture": "Capstone - Endterm",
+    "question": "Which UML model is best suited to show how an object changes state in response to events (and is not needed for every object)?",
+    "options": [
+      "State diagram",
+      "Use case diagram",
+      "Class diagram",
+      "Package diagram"
+    ],
+    "answer": 0,
+    "explanation": "State diagrams model the life cycle of objects with significant state-dependent behavior, showing transitions triggered by events—only needed for complex objects."
+  },
+  {
+    "id": 12,
+    "lecture": "Capstone - Endterm",
+    "question": "Why is \"pure agile\" often impractical for dependable systems engineering?",
+    "options": [
+      "Agile cannot use iterative development",
+      "Agile bans verification and validation",
+      "Certification needs process/product documentation and upfront requirements analysis; agile minimizes documentation and interleaves specs with code",
+      "Dependable systems cannot be tested"
+    ],
+    "answer": 2,
+    "explanation": "Safety-critical systems require formal documentation and upfront requirements for certification, which conflicts with agile's emphasis on minimal documentation and evolving requirements."
+  },
+  {
+    "id": 13,
+    "lecture": "Capstone - Endterm",
+    "question": "Which statement about reuse levels is correct?",
+    "options": [
+      "\"Component level\" reuse means reusing entire application systems",
+      "\"Abstraction level\" reuse means reusing knowledge of successful abstractions in design",
+      "\"Object level\" reuse means only reusing databases",
+      "\"System level\" reuse means reusing a single object from a library"
+    ],
+    "answer": 1,
+    "explanation": "Abstraction-level reuse involves applying proven design patterns, architectural styles, and principles rather than reusing concrete code components."
+  },
+  {
+    "id": 14,
+    "lecture": "Capstone - Endterm",
+    "question": "In early-stage requirements discussions, which statement best matches the intended use of graphical models?",
+    "options": [
+      "Models must be complete and correct because they will be used to generate code",
+      "Only behavioral models are useful; structural models confuse stakeholders",
+      "Incomplete/incorrect models can be acceptable if they facilitate stakeholder discussion",
+      "Models should avoid UML because UML is only for implementation"
+    ],
+    "answer": 2,
+    "explanation": "Early models serve as communication tools to explore ideas and reach shared understanding—they need not be complete or precise to be valuable for discussion."
+  },
+  {
+    "id": 15,
+    "lecture": "Capstone - Endterm",
+    "question": "Which architectural choice most directly aligns with security guidance?",
+    "options": [
+      "Use fine-grain replaceable components for all modules",
+      "Prefer pipe-and-filter for interactive systems",
+      "Prefer box-and-line diagrams because they have precise semantics",
+      "Use layered architecture with critical assets in inner layers"
+    ],
+    "answer": 3,
+    "explanation": "Layered architecture with critical assets in inner layers implements defense-in-depth, where outer layers must be penetrated before accessing sensitive components."
+  },
+  {
+    "id": 16,
+    "lecture": "Capstone - Endterm",
+    "question": "A design pattern description typically includes which set of elements?",
+    "options": [
+      "Name, code, compiler version, license",
+      "Actors, states, transitions, events",
+      "Name, problem, solution, consequences",
+      "Inputs, outputs, throughput, latency"
+    ],
+    "answer": 2,
+    "explanation": "Design patterns document proven solutions by specifying the context (problem), the solution structure, and the trade-offs (consequences) of applying the pattern."
+  },
+  {
+    "id": 17,
+    "lecture": "Capstone - Endterm",
+    "question": "In socio-technical systems, which is stated as perhaps the largest single cause of system failures?",
+    "options": [
+      "Software specification errors",
+      "Lack of formal methods",
+      "Hardware reaching end-of-life",
+      "Operational failure due to human mistakes"
+    ],
+    "answer": 3,
+    "explanation": "Human error in operation is frequently cited as the primary cause of failures in socio-technical systems, as people interact with complex systems in unpredictable ways."
+  },
+  {
+    "id": 18,
+    "lecture": "Capstone - Endterm",
+    "question": "\"Build or buy\" (COTS) most directly changes the main concern of design into:",
+    "options": [
+      "Eliminating stakeholder communication",
+      "Avoiding UML models entirely",
+      "Proving program correctness formally",
+      "Deciding how to use configuration features to meet requirements"
+    ],
+    "answer": 3,
+    "explanation": "With COTS, design shifts from custom development to selecting and configuring existing components to satisfy requirements through their available features."
+  },
+  {
+    "id": 19,
+    "lecture": "Capstone - Endterm",
+    "question": "A system with intermittent and infrequent demands (e.g., emergency shutdown) is best specified/assessed using:",
+    "options": ["MTTF", "POFOD", "Availability only", "ROCOF"],
+    "answer": 1,
+    "explanation": "POFOD (Probability of Failure on Demand) measures the likelihood of failure when the system is actually invoked, which is critical for infrequently used safety functions."
+  },
+  {
+    "id": 20,
+    "lecture": "Capstone - Endterm",
+    "question": "A sequence diagram adds which key information beyond a use-case overview?",
+    "options": [
+      "Static class attributes and associations",
+      "A list of system stakeholders and constraints",
+      "Hardware deployment nodes and network topology",
+      "Object-to-object interaction ordering over time for a scenario/use-case instance"
+    ],
+    "answer": 3,
+    "explanation": "Sequence diagrams detail the temporal order of messages exchanged between objects for a specific scenario, showing dynamic interaction flow that use cases only outline."
+  }
+]

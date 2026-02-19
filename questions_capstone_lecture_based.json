@@ -1,0 +1,2966 @@
+[
+  {
+    "id": 1,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "Which of the following is a key difference between generic and customized software products?",
+    "options": [
+      "Generic products are always cheaper than customized products",
+      "Customized products are developed for a specific customer, while generic products are sold on the open market",
+      "Generic products have no documentation, while customized products have detailed documentation",
+      "Customized products are always more reliable than generic products"
+    ],
+    "answer": 1,
+    "explanation": "Generic products are stand-alone systems marketed to any customer, while customized products are commissioned by a specific customer to meet their own needs."
+  },
+  {
+    "id": 2,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "According to the ACM/IEEE Code of Ethics, software engineers shall act consistently with the public interest. This is covered under which principle?",
+    "options": ["PRODUCT", "CLIENT AND EMPLOYER", "PUBLIC", "JUDGMENT"],
+    "answer": 2,
+    "explanation": "Principle 1 (PUBLIC) states that software engineers shall act consistently with the public interest."
+  },
+  {
+    "id": 3,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "Which software process model is most appropriate when requirements are well-understood and changes are limited?",
+    "options": [
+      "Incremental development",
+      "Waterfall model",
+      "Integration and configuration",
+      "Agile development"
+    ],
+    "answer": 1,
+    "explanation": "The waterfall model works well when requirements are stable and well-understood, as it follows a linear sequence of phases."
+  },
+  {
+    "id": 4,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is a key advantage of incremental development over the waterfall model?",
+    "options": [
+      "It requires less customer involvement",
+      "It reduces the cost of accommodating changing requirements",
+      "It produces complete documentation at each phase",
+      "It eliminates the need for testing"
+    ],
+    "answer": 1,
+    "explanation": "Incremental development interleaves specification, development, and validation, making it easier to respond to changing customer requirements with less rework."
+  },
+  {
+    "id": 5,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "In Extreme Programming (XP), what is the purpose of test-first development?",
+    "options": [
+      "To ensure that all code is documented before implementation",
+      "To clarify requirements and catch errors early by writing tests before code",
+      "To replace the need for customer involvement",
+      "To reduce the number of releases"
+    ],
+    "answer": 1,
+    "explanation": "Test-first development involves writing automated tests before the functionality itself, which clarifies requirements and helps detect errors early."
+  },
+  {
+    "id": 6,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "In Scrum, what is the role of the ScrumMaster?",
+    "options": [
+      "To manage the project and assign tasks to developers",
+      "To ensure the Scrum process is followed and protect the team from external distractions",
+      "To act as the product owner and prioritize the backlog",
+      "To write all user stories"
+    ],
+    "answer": 1,
+    "explanation": "The ScrumMaster is responsible for ensuring the Scrum process is followed and for shielding the team from outside interference, not for traditional project management."
+  },
+  {
+    "id": 7,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "Which of the following is an example of a non-functional requirement?",
+    "options": [
+      "The system shall allow users to search appointments by clinic",
+      "The system shall generate a list of patients expected each day",
+      "The system shall be available 99.9% of the time during working hours",
+      "Each staff member shall be uniquely identified by an 8-digit number"
+    ],
+    "answer": 2,
+    "explanation": "Non-functional requirements specify constraints on the system, such as availability, reliability, or performance, rather than specific behaviors."
+  },
+  {
+    "id": 8,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the main purpose of requirements validation?",
+    "options": [
+      "To elicit requirements from stakeholders",
+      "To demonstrate that the requirements define the system the customer really wants",
+      "To prioritize requirements for development",
+      "To manage changes to requirements"
+    ],
+    "answer": 1,
+    "explanation": "Requirements validation checks the requirements for validity, consistency, completeness, realism, and verifiability to ensure they match customer needs."
+  },
+  {
+    "id": 9,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "Which UML diagram is best suited to show the sequence of interactions between objects over time for a specific use case?",
+    "options": [
+      "Class diagram",
+      "State diagram",
+      "Sequence diagram",
+      "Use case diagram"
+    ],
+    "answer": 2,
+    "explanation": "Sequence diagrams illustrate the order of messages exchanged between objects, providing a dynamic view of interactions for a particular scenario."
+  },
+  {
+    "id": 10,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What type of model is used to represent the operational context of a system, showing what lies outside the system boundaries?",
+    "options": [
+      "Behavioral model",
+      "Context model",
+      "Interaction model",
+      "Structural model"
+    ],
+    "answer": 1,
+    "explanation": "Context models illustrate the system's environment and other systems it interacts with, helping to define system boundaries."
+  },
+  {
+    "id": 11,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "Which architectural pattern separates presentation and interaction from system data, allowing multiple views of the same data?",
+    "options": [
+      "Layered architecture",
+      "Repository pattern",
+      "Model-View-Controller (MVC)",
+      "Pipe-and-filter"
+    ],
+    "answer": 2,
+    "explanation": "MVC separates the model (data), view (presentation), and controller (interaction), enabling multiple representations of the same data."
+  },
+  {
+    "id": 12,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "In the 4+1 view model, which view describes the system's hardware and how software components are distributed across processors?",
+    "options": [
+      "Logical view",
+      "Process view",
+      "Development view",
+      "Physical view"
+    ],
+    "answer": 3,
+    "explanation": "The physical view maps software to hardware, showing distribution across processors and network topology."
+  },
+  {
+    "id": 13,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is a design pattern?",
+    "options": [
+      "A complete implementation of a system",
+      "A reusable template for solving a common design problem",
+      "A programming language feature",
+      "A type of UML diagram"
+    ],
+    "answer": 1,
+    "explanation": "A design pattern provides a general, reusable solution to a commonly occurring problem within a given context in software design."
+  },
+  {
+    "id": 14,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "Which open source license requires that derivative works also be distributed under the same license?",
+    "options": [
+      "BSD License",
+      "GNU General Public License (GPL)",
+      "MIT License",
+      "Apache License"
+    ],
+    "answer": 1,
+    "explanation": "GPL is a reciprocal (copyleft) license that mandates any derived work be licensed under GPL as well."
+  },
+  {
+    "id": 15,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "Which dependability property reflects the probability that a system will be operational and able to deliver services at a given point in time?",
+    "options": ["Reliability", "Safety", "Availability", "Security"],
+    "answer": 2,
+    "explanation": "Availability measures the proportion of time a system is functional and ready for use, regardless of failures that may have occurred."
+  },
+  {
+    "id": 16,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the primary purpose of redundancy and diversity in dependable systems?",
+    "options": [
+      "To reduce development costs",
+      "To prevent common-mode failures and increase fault tolerance",
+      "To simplify system architecture",
+      "To eliminate the need for testing"
+    ],
+    "answer": 1,
+    "explanation": "Redundancy provides backup components, while diversity implements the same functionality differently to avoid single points of failure and common-mode errors."
+  },
+  {
+    "id": 17,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "Which reliability metric is most appropriate for a system that is invoked infrequently, such as an emergency shutdown system?",
+    "options": [
+      "ROCOF (Rate of Occurrence of Failure)",
+      "MTTF (Mean Time To Failure)",
+      "POFOD (Probability of Failure on Demand)",
+      "Availability"
+    ],
+    "answer": 2,
+    "explanation": "POFOD measures the likelihood that the system fails when a service is requested, which is critical for on-demand systems."
+  },
+  {
+    "id": 18,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is the difference between a fault and a failure?",
+    "options": [
+      "A fault is a human mistake; a failure is a system error",
+      "A fault is a defect that may cause an error; a failure is an observable deviation from expected behavior",
+      "A fault always leads to a failure",
+      "A failure is a defect in the code; a fault is an incorrect output"
+    ],
+    "answer": 1,
+    "explanation": "A fault (bug) can cause an error (incorrect internal state), which may lead to a failure (observable incorrect behavior). Not all faults result in failures."
+  },
+  {
+    "id": 19,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is a hazard in safety engineering?",
+    "options": [
+      "An accident that has already occurred",
+      "A condition with the potential to cause an accident",
+      "A measure of damage from an accident",
+      "A safety requirement"
+    ],
+    "answer": 1,
+    "explanation": "A hazard is a state or condition that can lead to an accident if not controlled or mitigated."
+  },
+  {
+    "id": 20,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is the purpose of a safety case?",
+    "options": [
+      "To document all system requirements",
+      "To provide evidence and arguments that a system is acceptably safe",
+      "To replace system testing",
+      "To define the project schedule"
+    ],
+    "answer": 1,
+    "explanation": "A safety case is a structured document that presents evidence and reasoning to demonstrate that a system meets its safety requirements, often required for certification."
+  },
+  {
+    "id": 21,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "Which of the following is NOT an essential attribute of good software according to the lecture?",
+    "options": [
+      "Maintainability",
+      "Dependability and security",
+      "Efficiency",
+      "Complexity"
+    ],
+    "answer": 3,
+    "explanation": "Essential attributes include maintainability, dependability, efficiency, and acceptability. Complexity is not a desired attribute."
+  },
+  {
+    "id": 22,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the main drawback of the waterfall model?",
+    "options": [
+      "It requires too much customer involvement",
+      "It is difficult to accommodate changes after the process is underway",
+      "It produces no documentation",
+      "It is only suitable for small systems"
+    ],
+    "answer": 1,
+    "explanation": "The waterfall model's rigid sequential phases make it hard to respond to changing requirements once a phase is complete."
+  },
+  {
+    "id": 23,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "Which of the following is a principle of the Agile Manifesto?",
+    "options": [
+      "Comprehensive documentation over working software",
+      "Following a plan over responding to change",
+      "Customer collaboration over contract negotiation",
+      "Processes and tools over individuals and interactions"
+    ],
+    "answer": 2,
+    "explanation": "The Agile Manifesto values customer collaboration over contract negotiation, along with individuals and interactions, working software, and responding to change."
+  },
+  {
+    "id": 24,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the main challenge with using natural language for requirements specification?",
+    "options": [
+      "It is too formal for stakeholders",
+      "It can lead to ambiguity and lack of clarity",
+      "It cannot be used for system requirements",
+      "It is not supported by any tools"
+    ],
+    "answer": 1,
+    "explanation": "Natural language is expressive but prone to ambiguity, imprecision, and confusion between functional and non-functional requirements."
+  },
+  {
+    "id": 25,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "Which type of model is used to describe the dynamic behavior of a system in response to events?",
+    "options": [
+      "Class diagram",
+      "State machine diagram",
+      "Component diagram",
+      "Deployment diagram"
+    ],
+    "answer": 1,
+    "explanation": "State machine diagrams model how a system or object changes state in response to events, showing dynamic behavior."
+  },
+  {
+    "id": 26,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What is the main difference between software engineering and computer science?",
+    "options": [
+      "Software engineering focuses on theory, computer science on practicalities",
+      "Computer science focuses on theory and fundamentals; software engineering is concerned with practicalities of developing and delivering useful software",
+      "There is no difference",
+      "Software engineering includes hardware design, computer science does not"
+    ],
+    "answer": 1,
+    "explanation": "Computer science is about theory and fundamentals, while software engineering is about practical software development and delivery."
+  },
+  {
+    "id": 27,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "Which of the following is an example of a customized software product?",
+    "options": [
+      "Microsoft Office",
+      "Adobe Photoshop",
+      "Air traffic control software",
+      "A mobile game"
+    ],
+    "answer": 2,
+    "explanation": "Customized products are commissioned by a specific customer; air traffic control is typically developed for a particular customer/agency."
+  },
+  {
+    "id": 28,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What are the fundamental software engineering activities?",
+    "options": [
+      "Planning, coding, testing, deployment",
+      "Specification, development, validation, evolution",
+      "Requirements, design, implementation, maintenance",
+      "Analysis, design, programming, testing"
+    ],
+    "answer": 1,
+    "explanation": "The four fundamental activities are software specification, development, validation, and evolution."
+  },
+  {
+    "id": 29,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What is the key difference between system engineering and software engineering?",
+    "options": [
+      "System engineering is part of software engineering",
+      "Software engineering is part of system engineering, which includes hardware, software, and process engineering",
+      "They are identical",
+      "System engineering only deals with hardware"
+    ],
+    "answer": 1,
+    "explanation": "System engineering is broader, covering all aspects of computer-based systems; software engineering is part of that."
+  },
+  {
+    "id": 30,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "According to the lecture, what percentage of software costs are development costs?",
+    "options": ["20%", "40%", "60%", "80%"],
+    "answer": 2,
+    "explanation": "Roughly 60% of software costs are development costs, and 40% are testing costs; evolution costs often exceed development for custom software."
+  },
+  {
+    "id": 31,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "Which of the following is NOT a challenge facing software engineering?",
+    "options": [
+      "Coping with increasing diversity",
+      "Demands for reduced delivery times",
+      "Developing trustworthy software",
+      "Ensuring all software is free of cost"
+    ],
+    "answer": 3,
+    "explanation": "Key challenges include diversity, reduced delivery times, and trustworthiness; cost-free software is not a realistic challenge."
+  },
+  {
+    "id": 32,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What does software dependability include?",
+    "options": [
+      "Only reliability",
+      "Reliability, security, and safety",
+      "Only security",
+      "Only performance"
+    ],
+    "answer": 1,
+    "explanation": "Dependability includes reliability, security, and safety, ensuring no physical/economic damage and resistance to malicious users."
+  },
+  {
+    "id": 33,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "Which of the following is a professional responsibility of software engineers?",
+    "options": [
+      "Confidentiality",
+      "Misrepresenting competence",
+      "Ignoring intellectual property",
+      "Using technical skills for computer misuse"
+    ],
+    "answer": 0,
+    "explanation": "Engineers should respect confidentiality; the others are violations of professional ethics."
+  },
+  {
+    "id": 34,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What is the ACM/IEEE Code of Ethics Principle 5 about?",
+    "options": ["PUBLIC", "PRODUCT", "MANAGEMENT", "COLLEAGUES"],
+    "answer": 2,
+    "explanation": "Principle 5 (MANAGEMENT) states that managers shall subscribe to and promote an ethical approach to management of software development."
+  },
+  {
+    "id": 35,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "Which case study involves a data collection system for remote areas?",
+    "options": [
+      "Insulin pump",
+      "Mentcare",
+      "Wilderness weather station",
+      "iLearn"
+    ],
+    "answer": 2,
+    "explanation": "The wilderness weather station collects weather data in remote areas."
+  },
+  {
+    "id": 36,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "In the Mentcare system, what is a key concern related to patient information?",
+    "options": ["Performance", "Privacy", "Efficiency", "Portability"],
+    "answer": 1,
+    "explanation": "Patient information must be confidential and disclosed only to authorized medical staff."
+  },
+  {
+    "id": 37,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What is the primary purpose of software engineering?",
+    "options": [
+      "To write code as quickly as possible",
+      "To develop software using theories, methods, and tools for professional development",
+      "To eliminate all bugs",
+      "To create documentation"
+    ],
+    "answer": 1,
+    "explanation": "Software engineering is concerned with theories, methods, and tools for professional software development."
+  },
+  {
+    "id": 38,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "Which attribute of good software ensures it can evolve to meet changing customer needs?",
+    "options": [
+      "Efficiency",
+      "Maintainability",
+      "Dependability",
+      "Acceptability"
+    ],
+    "answer": 1,
+    "explanation": "Maintainability means software can be changed to meet new requirements."
+  },
+  {
+    "id": 39,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What is a common reason for software project failure?",
+    "options": [
+      "Too much documentation",
+      "Failure to use software engineering methods",
+      "Using agile methods",
+      "Customer involvement"
+    ],
+    "answer": 1,
+    "explanation": "Many companies drift into development without using software engineering methods, leading to expensive and unreliable software."
+  },
+  {
+    "id": 40,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What does the iLearn system demonstrate?",
+    "options": [
+      "A safety-critical system",
+      "A digital learning environment with service-oriented architecture",
+      "A batch processing system",
+      "An embedded control system"
+    ],
+    "answer": 1,
+    "explanation": "iLearn is a digital learning environment using service-oriented architecture with replaceable services."
+  },
+  {
+    "id": 41,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "Which of the following is a generic product?",
+    "options": [
+      "A hospital patient record system developed for a specific hospital",
+      "An air traffic control system",
+      "Microsoft Windows",
+      "A military command and control system"
+    ],
+    "answer": 2,
+    "explanation": "Microsoft Windows is a stand-alone system sold on the open market, so it is a generic product."
+  },
+  {
+    "id": 42,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What is the main role of software engineering ethics?",
+    "options": [
+      "To increase profits",
+      "To ensure engineers behave in an honest and ethically responsible way",
+      "To reduce development time",
+      "To enforce laws"
+    ],
+    "answer": 1,
+    "explanation": "Ethics involve following morally correct principles beyond just upholding the law."
+  },
+  {
+    "id": 43,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "Which of the following is NOT one of the eight principles in the ACM/IEEE Code of Ethics?",
+    "options": ["PUBLIC", "PROFIT", "PRODUCT", "SELF"],
+    "answer": 1,
+    "explanation": "The principles are PUBLIC, CLIENT AND EMPLOYER, PRODUCT, JUDGMENT, MANAGEMENT, PROFESSION, COLLEAGUES, SELF. PROFIT is not a principle."
+  },
+  {
+    "id": 44,
+    "lecture": "Lecture 1 - SE, IT",
+    "question": "What does the insulin pump case study illustrate?",
+    "options": [
+      "A transaction processing system",
+      "A safety-critical embedded system",
+      "A web-based system",
+      "A batch processing system"
+    ],
+    "answer": 1,
+    "explanation": "The insulin pump is an embedded system that controls insulin delivery; it is safety-critical because failures can cause harm."
+  },
+  {
+    "id": 45,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "Which software process model is based on assembling systems from existing configurable components?",
+    "options": [
+      "Waterfall model",
+      "Incremental development",
+      "Integration and configuration",
+      "Spiral model"
+    ],
+    "answer": 2,
+    "explanation": "Integration and configuration focuses on reusing existing components and configuring them for specific needs."
+  },
+  {
+    "id": 46,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is a disadvantage of incremental development?",
+    "options": [
+      "It is impossible to get customer feedback",
+      "System structure tends to degrade as increments are added",
+      "It requires a complete specification upfront",
+      "It cannot be used for large systems"
+    ],
+    "answer": 1,
+    "explanation": "Without refactoring, regular changes can corrupt system structure, making further changes difficult and costly."
+  },
+  {
+    "id": 47,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the purpose of software prototyping?",
+    "options": [
+      "To replace the final system",
+      "To demonstrate concepts and try out design options",
+      "To generate final documentation",
+      "To test the system under full load"
+    ],
+    "answer": 1,
+    "explanation": "Prototypes help in requirements elicitation, design exploration, and UI development, but are usually not intended for production."
+  },
+  {
+    "id": 48,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "In the V-model of testing, what does system testing verify?",
+    "options": [
+      "Individual components",
+      "The system as a whole against the requirements",
+      "The user manual",
+      "The design documents"
+    ],
+    "answer": 1,
+    "explanation": "System testing checks the integrated system against the requirements specification."
+  },
+  {
+    "id": 49,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the main goal of process improvement?",
+    "options": [
+      "To eliminate all documentation",
+      "To increase product quality and/or reduce costs and development time",
+      "To make the process more complex",
+      "To reduce team communication"
+    ],
+    "answer": 1,
+    "explanation": "Process improvement aims to enhance quality, reduce costs, or accelerate development by understanding and changing existing processes."
+  },
+  {
+    "id": 50,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "At which level of the SEI Capability Maturity Model are process management procedures and strategies defined and used?",
+    "options": ["Initial", "Repeatable", "Defined", "Managed"],
+    "answer": 2,
+    "explanation": "The Defined level has process management procedures and strategies defined and used."
+  },
+  {
+    "id": 51,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is a key advantage of incremental delivery?",
+    "options": [
+      "All requirements must be defined at the start",
+      "Customer value can be delivered with each increment",
+      "It requires no customer feedback",
+      "It eliminates the need for testing"
+    ],
+    "answer": 1,
+    "explanation": "Incremental delivery allows customers to use and gain value from early increments, providing feedback for later ones."
+  },
+  {
+    "id": 52,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What does the requirements engineering process NOT include?",
+    "options": [
+      "Requirements elicitation",
+      "Requirements specification",
+      "Requirements validation",
+      "Requirements compilation"
+    ],
+    "answer": 3,
+    "explanation": "Requirements compilation is not a standard activity; the process includes elicitation, analysis, specification, validation, and management."
+  },
+  {
+    "id": 53,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the role of a post-condition in a process description?",
+    "options": [
+      "It defines what must be true before an activity starts",
+      "It defines what must be true after an activity has been completed",
+      "It describes the roles of people involved",
+      "It lists the products of the process"
+    ],
+    "answer": 1,
+    "explanation": "Post-conditions are statements that are true after an activity is enacted or a product produced."
+  },
+  {
+    "id": 54,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "Which of the following is a benefit of using COTS (Commercial Off-The-Shelf) components?",
+    "options": [
+      "No requirements compromises needed",
+      "Complete control over evolution",
+      "Reduced costs and risks as less software is developed from scratch",
+      "Guaranteed perfect fit to user needs"
+    ],
+    "answer": 2,
+    "explanation": "Reuse reduces development costs and risks, but may require compromises and loss of control over evolution."
+  },
+  {
+    "id": 55,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the main difference between plan-driven and agile processes?",
+    "options": [
+      "Agile processes are always better",
+      "Plan-driven processes plan activities in advance; agile processes plan incrementally",
+      "Plan-driven processes have no planning",
+      "Agile processes cannot handle change"
+    ],
+    "answer": 1,
+    "explanation": "Plan-driven processes have detailed upfront plans; agile processes plan incrementally and adapt to change."
+  },
+  {
+    "id": 56,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "In software design, what is architectural design?",
+    "options": [
+      "Designing the user interface",
+      "Identifying the overall structure of the system, principal components, and their relationships",
+      "Writing code",
+      "Testing the system"
+    ],
+    "answer": 1,
+    "explanation": "Architectural design identifies the system's structure and components."
+  },
+  {
+    "id": 57,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the purpose of a process metric like 'time taken for process activities'?",
+    "options": [
+      "To assess developer salaries",
+      "To measure process performance and identify improvements",
+      "To compare programming languages",
+      "To determine which developers to fire"
+    ],
+    "answer": 1,
+    "explanation": "Process metrics help in measuring attributes to assess the effectiveness of process improvements."
+  },
+  {
+    "id": 58,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the primary purpose of software validation?",
+    "options": [
+      "To check that the system conforms to its specification and meets customer needs",
+      "To design the software",
+      "To manage changes",
+      "To plan the project"
+    ],
+    "answer": 0,
+    "explanation": "Validation (including testing and reviews) ensures the system meets its specification and real user needs."
+  },
+  {
+    "id": 59,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "Which process model is most suitable for large systems engineering projects with multiple sites?",
+    "options": [
+      "Waterfall model",
+      "Incremental development",
+      "Integration and configuration",
+      "All of the above"
+    ],
+    "answer": 0,
+    "explanation": "The waterfall model is often used for large systems where plan-driven coordination is needed across sites."
+  },
+  {
+    "id": 60,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is a common issue with reuse-oriented software engineering?",
+    "options": [
+      "It always increases development time",
+      "Requirements compromises may lead to a system that does not fully meet user needs",
+      "It eliminates the need for testing",
+      "It requires no configuration"
+    ],
+    "answer": 1,
+    "explanation": "Reuse often requires compromises, so the system may not exactly match user requirements."
+  },
+  {
+    "id": 61,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "Which XP practice involves two programmers working together at one computer?",
+    "options": [
+      "Collective ownership",
+      "Pair programming",
+      "Continuous integration",
+      "Refactoring"
+    ],
+    "answer": 1,
+    "explanation": "Pair programming means developers work in pairs, checking each other's work and sharing knowledge."
+  },
+  {
+    "id": 62,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is a user story in XP?",
+    "options": [
+      "A detailed design document",
+      "A short description of a feature written from the user's perspective",
+      "A test case",
+      "A UML diagram"
+    ],
+    "answer": 1,
+    "explanation": "User stories are short, simple descriptions of a feature told from the user's perspective, used for estimation and planning."
+  },
+  {
+    "id": 63,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is refactoring in agile development?",
+    "options": [
+      "Rewriting the entire system",
+      "Improving the code structure without changing its behavior",
+      "Adding new features",
+      "Fixing bugs"
+    ],
+    "answer": 1,
+    "explanation": "Refactoring is the process of restructuring existing code to improve its readability, reduce complexity, and make it easier to maintain."
+  },
+  {
+    "id": 64,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "In Scrum, what is the product backlog?",
+    "options": [
+      "A list of tasks for the current sprint",
+      "A list of all features, requirements, and work to be done on the project",
+      "A record of completed sprints",
+      "A document of user stories for the next release"
+    ],
+    "answer": 1,
+    "explanation": "The product backlog is an ordered list of everything that might be needed in the product, managed by the product owner."
+  },
+  {
+    "id": 65,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the recommended duration of a Scrum sprint?",
+    "options": ["1 day", "1 week", "2-4 weeks", "3 months"],
+    "answer": 2,
+    "explanation": "Sprints are typically 2-4 weeks long, producing a potentially shippable product increment."
+  },
+  {
+    "id": 66,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the role of the product owner in Scrum?",
+    "options": [
+      "To manage the development team",
+      "To ensure the Scrum process is followed",
+      "To identify product features and prioritize them",
+      "To write all the code"
+    ],
+    "answer": 2,
+    "explanation": "The product owner is responsible for maximizing the value of the product by managing and prioritizing the product backlog."
+  },
+  {
+    "id": 67,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "Which of the following is a challenge when scaling agile methods to large systems?",
+    "options": [
+      "Too much documentation",
+      "Co-located teams are not possible, and cross-team communication becomes difficult",
+      "Agile methods require no planning",
+      "Large systems have no stakeholders"
+    ],
+    "answer": 1,
+    "explanation": "Scaling agile involves multiple distributed teams, requiring coordination and communication mechanisms."
+  },
+  {
+    "id": 68,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the main purpose of test-first development in XP?",
+    "options": [
+      "To ensure all code is tested after implementation",
+      "To write tests before code, clarifying requirements and enabling automated regression testing",
+      "To eliminate the need for customer involvement",
+      "To replace design documentation"
+    ],
+    "answer": 1,
+    "explanation": "Test-first development involves writing automated tests before the code, which helps clarify requirements and catch errors early."
+  },
+  {
+    "id": 69,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the daily Scrum meeting?",
+    "options": [
+      "A status meeting for managers",
+      "A short meeting where team members share progress, plans, and problems",
+      "A demonstration of the product to stakeholders",
+      "A sprint planning session"
+    ],
+    "answer": 1,
+    "explanation": "The daily Scrum is a 15-minute meeting for the development team to synchronize activities and plan for the next 24 hours."
+  },
+  {
+    "id": 70,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is a key benefit of pair programming?",
+    "options": [
+      "It reduces communication",
+      "It helps spread knowledge across the team and acts as an informal review process",
+      "It allows programmers to work independently",
+      "It eliminates the need for testing"
+    ],
+    "answer": 1,
+    "explanation": "Pair programming promotes knowledge sharing, collective code ownership, and continuous code review."
+  },
+  {
+    "id": 71,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "Which of the following is NOT a principle of agile methods?",
+    "options": [
+      "Customer involvement",
+      "Incremental delivery",
+      "Big design upfront",
+      "Embrace change"
+    ],
+    "answer": 2,
+    "explanation": "Agile methods favor responding to change over following a plan, and do not emphasize big upfront design."
+  },
+  {
+    "id": 72,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the 'sustainable pace' practice in XP?",
+    "options": [
+      "Working overtime every day",
+      "Avoiding large amounts of overtime to maintain code quality and productivity",
+      "Working only 4 hours a day",
+      "Taking long breaks"
+    ],
+    "answer": 1,
+    "explanation": "XP advocates a sustainable pace, where excessive overtime is avoided because it reduces quality and productivity in the medium term."
+  },
+  {
+    "id": 73,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the main challenge with using agile methods for maintenance?",
+    "options": [
+      "Agile methods cannot be used for maintenance",
+      "Lack of product documentation and possible loss of original team continuity",
+      "Maintenance requires no customer involvement",
+      "Maintenance is always done using waterfall"
+    ],
+    "answer": 1,
+    "explanation": "Agile methods rely on tacit knowledge and team continuity, which may be lost in long-term maintenance."
+  },
+  {
+    "id": 74,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "In Scrum, what is velocity?",
+    "options": [
+      "The speed of coding",
+      "An estimate of how much product backlog effort a team can cover in a sprint",
+      "The number of bugs fixed per day",
+      "The time taken for daily meetings"
+    ],
+    "answer": 1,
+    "explanation": "Velocity is a measure of the amount of work a team can complete in a sprint, used for planning future sprints."
+  },
+  {
+    "id": 75,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the main difference between user requirements and system requirements?",
+    "options": [
+      "User requirements are for developers; system requirements are for customers",
+      "User requirements are high-level statements for customers; system requirements are detailed for developers",
+      "There is no difference",
+      "System requirements are written in natural language only"
+    ],
+    "answer": 1,
+    "explanation": "User requirements are abstract for customers; system requirements are detailed and may be part of a contract."
+  },
+  {
+    "id": 76,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "Which of the following is a domain requirement?",
+    "options": [
+      "The system shall be available 24/7",
+      "The system shall calculate insulin dose based on blood sugar level (a medical domain rule)",
+      "The system shall use Java",
+      "The system shall have a graphical user interface"
+    ],
+    "answer": 1,
+    "explanation": "Domain requirements come from the application domain, such as medical rules for an insulin pump."
+  },
+  {
+    "id": 77,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is a common problem with natural language requirements?",
+    "options": [
+      "They are too precise",
+      "They can be ambiguous and lead to different interpretations",
+      "They cannot be written",
+      "They are only used for non-functional requirements"
+    ],
+    "answer": 1,
+    "explanation": "Natural language is prone to ambiguity, making it difficult to ensure all stakeholders interpret them the same way."
+  },
+  {
+    "id": 78,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the purpose of requirements elicitation?",
+    "options": [
+      "To document requirements in detail",
+      "To discover requirements from stakeholders",
+      "To validate requirements",
+      "To manage changes"
+    ],
+    "answer": 1,
+    "explanation": "Elicitation involves gathering information about needs and constraints from stakeholders."
+  },
+  {
+    "id": 79,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "Which of the following is a technique for requirements discovery?",
+    "options": ["Testing", "Ethnography", "Compilation", "Deployment"],
+    "answer": 1,
+    "explanation": "Ethnography involves observing users in their work environment to understand their real needs."
+  },
+  {
+    "id": 80,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is a use case?",
+    "options": [
+      "A description of a system's architecture",
+      "A description of interactions between actors and the system to achieve a goal",
+      "A class diagram",
+      "A test case"
+    ],
+    "answer": 1,
+    "explanation": "Use cases describe how users (actors) interact with the system to accomplish a specific task."
+  },
+  {
+    "id": 81,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the purpose of requirements validation?",
+    "options": [
+      "To check if requirements are implemented correctly",
+      "To ensure requirements define the system the customer wants",
+      "To prioritize requirements",
+      "To write the requirements document"
+    ],
+    "answer": 1,
+    "explanation": "Validation ensures the requirements are correct, complete, consistent, and reflect stakeholder needs."
+  },
+  {
+    "id": 82,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "Which of the following is an example of a non-functional requirement metric?",
+    "options": [
+      "The system shall allow users to search by name",
+      "The system shall respond to user requests within 2 seconds",
+      "The system shall have a login screen",
+      "The system shall store patient records"
+    ],
+    "answer": 1,
+    "explanation": "Response time is a measurable non-functional requirement, often part of performance."
+  },
+  {
+    "id": 83,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the main challenge with stakeholder identification?",
+    "options": [
+      "Too few stakeholders",
+      "Different stakeholders may have conflicting requirements",
+      "Stakeholders always agree",
+      "Stakeholders have no influence"
+    ],
+    "answer": 1,
+    "explanation": "Stakeholders often have different priorities and needs, leading to conflicts that must be resolved."
+  },
+  {
+    "id": 84,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the purpose of a requirements document?",
+    "options": [
+      "To serve as a contract between client and developer",
+      "To provide a detailed design",
+      "To list all bugs",
+      "To describe the testing process"
+    ],
+    "answer": 0,
+    "explanation": "The requirements document is an official statement of what developers must implement, often part of a contract."
+  },
+  {
+    "id": 85,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is the main purpose of system modeling?",
+    "options": [
+      "To generate code automatically",
+      "To develop abstract models of a system from different perspectives",
+      "To replace documentation",
+      "To test the system"
+    ],
+    "answer": 1,
+    "explanation": "System modeling helps understand functionality and communicate with stakeholders using graphical notations like UML."
+  },
+  {
+    "id": 86,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "Which UML diagram is used to show the static structure of a system, including classes and their relationships?",
+    "options": [
+      "Use case diagram",
+      "Sequence diagram",
+      "Class diagram",
+      "State diagram"
+    ],
+    "answer": 2,
+    "explanation": "Class diagrams model the classes, attributes, methods, and associations in an object-oriented system."
+  },
+  {
+    "id": 87,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What does a state diagram represent?",
+    "options": [
+      "The interactions between objects over time",
+      "The states of an object and transitions triggered by events",
+      "The overall system architecture",
+      "The flow of data"
+    ],
+    "answer": 1,
+    "explanation": "State diagrams show the life cycle of an object, its states, and events that cause state changes."
+  },
+  {
+    "id": 88,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is generalization in class diagrams?",
+    "options": [
+      "A relationship where one class is a part of another",
+      "A relationship where a subclass inherits attributes and operations from a superclass",
+      "A relationship between objects and their use cases",
+      "A relationship showing message passing"
+    ],
+    "answer": 1,
+    "explanation": "Generalization (inheritance) allows subclasses to inherit features from a superclass."
+  },
+  {
+    "id": 89,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "Which perspective in system modeling focuses on the dynamic behavior of the system and how it responds to events?",
+    "options": [
+      "External perspective",
+      "Interaction perspective",
+      "Structural perspective",
+      "Behavioral perspective"
+    ],
+    "answer": 3,
+    "explanation": "The behavioral perspective models dynamic behavior, such as state changes and event responses."
+  },
+  {
+    "id": 90,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is model-driven engineering (MDE)?",
+    "options": [
+      "An approach where models are the principal outputs and code is generated automatically",
+      "A technique for creating UML diagrams",
+      "A method for testing",
+      "A way to manage requirements"
+    ],
+    "answer": 0,
+    "explanation": "MDE focuses on models rather than programs, generating implementations from them automatically."
+  },
+  {
+    "id": 91,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is a platform-independent model (PIM) in MDA?",
+    "options": [
+      "A model that includes platform-specific details",
+      "A model that describes system operation without implementation details",
+      "A model of the hardware",
+      "A model of the user interface"
+    ],
+    "answer": 1,
+    "explanation": "PIM abstracts away platform specifics, focusing on system functionality and structure."
+  },
+  {
+    "id": 92,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "Why are incomplete or incorrect models acceptable in early discussions?",
+    "options": [
+      "Because they are used for code generation",
+      "Because their role is to facilitate discussion and understanding",
+      "Because they are always perfect",
+      "Because stakeholders don't need to understand them"
+    ],
+    "answer": 1,
+    "explanation": "Early models serve as communication tools; they need not be complete to be useful for discussion."
+  },
+  {
+    "id": 93,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What does an activity diagram model?",
+    "options": [
+      "The sequence of messages between objects",
+      "The flow of control or data in a process",
+      "The static structure of classes",
+      "The deployment of components"
+    ],
+    "answer": 1,
+    "explanation": "Activity diagrams show workflows, step-by-step activities, and decision points."
+  },
+  {
+    "id": 94,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is the purpose of a context model?",
+    "options": [
+      "To show the internal structure of a system",
+      "To show what lies outside the system boundaries and other systems in the environment",
+      "To model user interactions",
+      "To model data flow"
+    ],
+    "answer": 1,
+    "explanation": "Context models define the system's environment and external entities it interacts with."
+  },
+  {
+    "id": 95,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "Which UML diagram is best suited for showing a business process model?",
+    "options": [
+      "Class diagram",
+      "Use case diagram",
+      "Activity diagram",
+      "Component diagram"
+    ],
+    "answer": 2,
+    "explanation": "Activity diagrams can model business processes with activities, decisions, and flows."
+  },
+  {
+    "id": 96,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What does a sequence diagram show beyond a use case?",
+    "options": [
+      "The detailed order of interactions between objects over time",
+      "The overall system architecture",
+      "The class hierarchy",
+      "The deployment of components"
+    ],
+    "answer": 0,
+    "explanation": "Sequence diagrams detail the message exchange sequence for a specific scenario, complementing use cases."
+  },
+  {
+    "id": 97,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is the main advantage of using UML for system modeling?",
+    "options": [
+      "It guarantees correct code",
+      "It provides a standardized notation for visualizing system design",
+      "It eliminates the need for documentation",
+      "It is only for object-oriented systems"
+    ],
+    "answer": 1,
+    "explanation": "UML offers a common visual language for specifying, constructing, and documenting software systems."
+  },
+  {
+    "id": 98,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is the main purpose of architectural design?",
+    "options": [
+      "To write code",
+      "To understand how a software system should be organized and design its overall structure",
+      "To test the system",
+      "To gather requirements"
+    ],
+    "answer": 1,
+    "explanation": "Architectural design identifies the main components and their relationships, linking requirements and implementation."
+  },
+  {
+    "id": 99,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "Which architectural pattern is based on a central data store accessible to all components?",
+    "options": ["Layered", "Client-server", "Repository", "Pipe-and-filter"],
+    "answer": 2,
+    "explanation": "The repository pattern uses a central repository for data shared by all components."
+  },
+  {
+    "id": 100,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is a key advantage of the client-server pattern?",
+    "options": [
+      "Servers can be distributed across a network",
+      "It eliminates the need for security",
+      "It has no single point of failure",
+      "It requires no network"
+    ],
+    "answer": 0,
+    "explanation": "Client-server allows distribution of servers and services across a network, providing scalability and accessibility."
+  },
+  {
+    "id": 101,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is a disadvantage of the layered architecture?",
+    "options": [
+      "It is difficult to understand",
+      "Performance can be degraded due to multiple layers of interpretation",
+      "It cannot be used for large systems",
+      "It requires all layers to be developed by one team"
+    ],
+    "answer": 1,
+    "explanation": "Layered architectures may introduce performance overhead because requests must pass through multiple layers."
+  },
+  {
+    "id": 102,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "Which architectural style is suitable for data processing systems where transformations are applied sequentially?",
+    "options": ["Repository", "Client-server", "Pipe-and-filter", "MVC"],
+    "answer": 2,
+    "explanation": "Pipe-and-filter processes data through a series of transformations, common in batch processing."
+  },
+  {
+    "id": 103,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What does the 'process view' in the 4+1 model describe?",
+    "options": [
+      "The system's hardware distribution",
+      "The system's runtime processes and their interactions",
+      "The key abstractions as objects",
+      "The software decomposition for development"
+    ],
+    "answer": 1,
+    "explanation": "The process view focuses on concurrency, communication, and synchronization at runtime."
+  },
+  {
+    "id": 104,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "Why are box-and-line diagrams commonly used for architectural representation?",
+    "options": [
+      "They have precise semantics",
+      "They are useful for communication with stakeholders and project planning",
+      "They are the only UML diagrams",
+      "They can be automatically compiled"
+    ],
+    "answer": 1,
+    "explanation": "Informal box-and-line diagrams are easy to understand and help in discussions, though they lack formal semantics."
+  },
+  {
+    "id": 105,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "Which architectural pattern would you choose to support multiple presentations of the same data?",
+    "options": ["Layered", "MVC", "Pipe-and-filter", "Repository"],
+    "answer": 1,
+    "explanation": "MVC separates data (model) from presentation (view), allowing multiple views of the same data."
+  },
+  {
+    "id": 106,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is a key characteristic of transaction processing systems?",
+    "options": [
+      "They process data in batches without user interaction",
+      "They handle user requests that update or query a database",
+      "They are event-driven real-time systems",
+      "They translate languages"
+    ],
+    "answer": 1,
+    "explanation": "Transaction processing systems handle user requests (transactions) that typically involve database operations."
+  },
+  {
+    "id": 107,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "Which of the following is an example of a language processing system?",
+    "options": [
+      "An ATM system",
+      "A compiler",
+      "An e-commerce website",
+      "A weather station"
+    ],
+    "answer": 1,
+    "explanation": "Compilers translate source code into another representation, a classic example of language processing."
+  },
+  {
+    "id": 108,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is a primary benefit of using architectural patterns?",
+    "options": [
+      "They guarantee bug-free code",
+      "They provide reusable knowledge about good design practices",
+      "They eliminate the need for requirements",
+      "They are only for documentation"
+    ],
+    "answer": 1,
+    "explanation": "Patterns capture proven solutions to recurring design problems, facilitating reuse and communication."
+  },
+  {
+    "id": 109,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is the main activity in object-oriented design?",
+    "options": [
+      "Writing code",
+      "Identifying objects, their interfaces, and relationships",
+      "Testing components",
+      "Deploying the system"
+    ],
+    "answer": 1,
+    "explanation": "Object-oriented design involves defining classes, objects, and their interactions to realize the system requirements."
+  },
+  {
+    "id": 110,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is a design pattern?",
+    "options": [
+      "A reusable solution to a common design problem",
+      "A UML diagram",
+      "A programming language feature",
+      "A testing technique"
+    ],
+    "answer": 0,
+    "explanation": "Design patterns are templates for solving recurring design issues, promoting reuse and best practices."
+  },
+  {
+    "id": 111,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "Which of the following is an example of a design pattern?",
+    "options": ["Observer", "Waterfall", "Scrum", "Java"],
+    "answer": 0,
+    "explanation": "Observer is a well-known design pattern for notifying dependent objects of state changes."
+  },
+  {
+    "id": 112,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is the purpose of configuration management?",
+    "options": [
+      "To manage changes to a software system and track versions",
+      "To design the system architecture",
+      "To write code",
+      "To test the system"
+    ],
+    "answer": 0,
+    "explanation": "Configuration management controls evolution, versioning, and integration of software components."
+  },
+  {
+    "id": 113,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is host-target development?",
+    "options": [
+      "Developing on one computer (host) and executing on another (target)",
+      "Developing on the same machine where the software runs",
+      "Developing using a host language",
+      "Developing with two monitors"
+    ],
+    "answer": 0,
+    "explanation": "Host-target development involves separate development and execution environments."
+  },
+  {
+    "id": 114,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is a key advantage of open source development?",
+    "options": [
+      "Source code is kept secret",
+      "Volunteers can contribute, potentially reducing costs and improving quality",
+      "No licensing is required",
+      "Only the original developer can modify the code"
+    ],
+    "answer": 1,
+    "explanation": "Open source leverages community contributions for faster development and bug fixing."
+  },
+  {
+    "id": 115,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is the main difference between GPL and BSD licenses?",
+    "options": [
+      "GPL is reciprocal; BSD is non-reciprocal",
+      "BSD requires source code disclosure; GPL does not",
+      "GPL allows proprietary use; BSD does not",
+      "There is no difference"
+    ],
+    "answer": 0,
+    "explanation": "GPL requires derivative works to also be open source, while BSD allows incorporation into proprietary software."
+  },
+  {
+    "id": 116,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is the purpose of an integrated development environment (IDE)?",
+    "options": [
+      "To replace the operating system",
+      "To provide a set of tools for software development within a common framework",
+      "To compile code only",
+      "To manage version control only"
+    ],
+    "answer": 1,
+    "explanation": "IDEs integrate editing, compiling, debugging, and other tools to support development."
+  },
+  {
+    "id": 117,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What does the Observer pattern define?",
+    "options": [
+      "A one-to-many dependency between objects so that when one changes, all dependents are notified",
+      "A way to create objects",
+      "A way to structure layers",
+      "A way to filter data"
+    ],
+    "answer": 0,
+    "explanation": "Observer pattern maintains consistency between related objects by automatically updating dependents."
+  },
+  {
+    "id": 118,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is a key benefit of software reuse?",
+    "options": [
+      "It always increases development time",
+      "It reduces costs and risks by leveraging existing components",
+      "It eliminates the need for testing",
+      "It guarantees perfect fit"
+    ],
+    "answer": 1,
+    "explanation": "Reuse can lower development costs, reduce risk, and speed up delivery, though it may require compromises."
+  },
+  {
+    "id": 119,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the definition of system dependability?",
+    "options": [
+      "The system's ability to run fast",
+      "The degree of trust users have in the system, covering reliability, availability, and security",
+      "The system's cost",
+      "The system's user interface quality"
+    ],
+    "answer": 1,
+    "explanation": "Dependability reflects the user's confidence that the system will operate as expected without failures."
+  },
+  {
+    "id": 120,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "Which of the following is NOT a principal dependability property?",
+    "options": ["Availability", "Reliability", "Safety", "Scalability"],
+    "answer": 3,
+    "explanation": "Scalability is not a dependability property; the main ones are availability, reliability, safety, security, and resilience."
+  },
+  {
+    "id": 121,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the main cause of system failures in socio-technical systems?",
+    "options": [
+      "Hardware failure",
+      "Software failure",
+      "Operational failure due to human mistakes",
+      "Environmental factors"
+    ],
+    "answer": 2,
+    "explanation": "Human error is now perhaps the largest single cause of failures in socio-technical systems."
+  },
+  {
+    "id": 122,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "Why does dependability cost increase exponentially as higher levels are required?",
+    "options": [
+      "Because developers demand higher salaries",
+      "Because more expensive techniques and extensive validation are needed",
+      "Because systems become larger",
+      "Because hardware becomes obsolete"
+    ],
+    "answer": 1,
+    "explanation": "Achieving high dependability requires costly techniques, hardware, and rigorous testing/validation."
+  },
+  {
+    "id": 123,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the role of redundancy in dependable systems?",
+    "options": [
+      "To simplify the system",
+      "To provide backup components in case of failure",
+      "To increase development time",
+      "To reduce testing"
+    ],
+    "answer": 1,
+    "explanation": "Redundancy means having duplicate components so that if one fails, another can take over."
+  },
+  {
+    "id": 124,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is diversity in the context of fault tolerance?",
+    "options": [
+      "Using different technologies or designs to implement the same functionality",
+      "Having multiple copies of the same component",
+      "Using different programming languages for no reason",
+      "Having a diverse development team"
+    ],
+    "answer": 0,
+    "explanation": "Diversity reduces the chance of common-mode failures by implementing the same function in different ways."
+  },
+  {
+    "id": 125,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is a safety case?",
+    "options": [
+      "A document arguing that a system is safe, with evidence",
+      "A test plan",
+      "A user manual",
+      "A code review"
+    ],
+    "answer": 0,
+    "explanation": "A safety case presents a structured argument and evidence that a system meets its safety requirements."
+  },
+  {
+    "id": 126,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is a key characteristic of a dependable process?",
+    "options": [
+      "It is undocumented",
+      "It is repeatable and auditable",
+      "It relies on individual heroics",
+      "It avoids verification"
+    ],
+    "answer": 1,
+    "explanation": "Dependable processes are explicitly defined, repeatable, and include verification activities."
+  },
+  {
+    "id": 127,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "Why are formal methods useful for dependable systems?",
+    "options": [
+      "They reduce the number of specification and implementation errors",
+      "They make code run faster",
+      "They eliminate the need for testing",
+      "They are easy for customers to understand"
+    ],
+    "answer": 0,
+    "explanation": "Formal methods use mathematical analysis to detect errors and inconsistencies, improving dependability."
+  },
+  {
+    "id": 128,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the main limitation of formal methods?",
+    "options": [
+      "They cannot handle large systems",
+      "They are hard to scale, and stakeholders may not understand formal specifications",
+      "They are too cheap",
+      "They are always combined with agile methods"
+    ],
+    "answer": 1,
+    "explanation": "Formal methods require specialized skills, are difficult to scale, and specifications are often incomprehensible to customers."
+  },
+  {
+    "id": 129,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is the difference between a fault and an error?",
+    "options": [
+      "A fault is a defect; an error is an incorrect internal state",
+      "A fault is a human mistake; an error is a failure",
+      "They are the same",
+      "An error leads to a fault"
+    ],
+    "answer": 0,
+    "explanation": "A fault (bug) can cause an error (incorrect state), which may lead to a failure (observable deviation)."
+  },
+  {
+    "id": 130,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is POFOD?",
+    "options": [
+      "Probability of Failure on Demand",
+      "Point of Failure Detection",
+      "Probability of Fault Occurrence",
+      "Percentage of Failures per Day"
+    ],
+    "answer": 0,
+    "explanation": "POFOD is the probability that the system fails when a service request is made, suitable for infrequent demands."
+  },
+  {
+    "id": 131,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What does ROCOF measure?",
+    "options": [
+      "The rate of occurrence of failures over time",
+      "The total number of faults",
+      "The time between failures",
+      "The availability percentage"
+    ],
+    "answer": 0,
+    "explanation": "ROCOF (Rate of Occurrence of Failures) indicates how often failures happen per unit time."
+  },
+  {
+    "id": 132,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is the main advantage of fault-tolerant architectures?",
+    "options": [
+      "They eliminate all faults",
+      "They allow the system to continue operating despite faults",
+      "They reduce development costs",
+      "They simplify design"
+    ],
+    "answer": 1,
+    "explanation": "Fault tolerance ensures system operation even when faults occur, through redundancy and error handling."
+  },
+  {
+    "id": 133,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is N-version programming?",
+    "options": [
+      "Writing multiple independent versions of a program to detect faults",
+      "Using N programming languages",
+      "Developing N features per release",
+      "A type of testing"
+    ],
+    "answer": 0,
+    "explanation": "N-version programming involves independently developing multiple versions to compare outputs and tolerate faults."
+  },
+  {
+    "id": 134,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is a protection system?",
+    "options": [
+      "A system that prevents unauthorized access",
+      "A specialized system that takes emergency action if a failure occurs",
+      "A system that protects against viruses",
+      "A backup system"
+    ],
+    "answer": 1,
+    "explanation": "Protection systems monitor a control system and intervene to prevent accidents when failures occur."
+  },
+  {
+    "id": 135,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "Why is software diversity difficult to achieve?",
+    "options": [
+      "Different teams often make similar mistakes or interpret specifications the same way",
+      "It is easy to ensure independence",
+      "It requires no additional effort",
+      "Diversity is automatically achieved"
+    ],
+    "answer": 0,
+    "explanation": "Common errors, specification mistakes, and cultural similarities can lead to correlated failures."
+  },
+  {
+    "id": 136,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is an operational profile in reliability testing?",
+    "options": [
+      "A set of test data that matches the expected usage pattern of the system",
+      "A profile of the development team",
+      "A description of system architecture",
+      "A list of all possible inputs"
+    ],
+    "answer": 0,
+    "explanation": "Operational profiles reflect how users actually use the system, crucial for accurate reliability measurement."
+  },
+  {
+    "id": 137,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "Why is reliability testing different from defect testing?",
+    "options": [
+      "Reliability testing uses atypical data",
+      "Defect testing focuses on finding bugs, while reliability testing measures failure rates under realistic usage",
+      "They are the same",
+      "Reliability testing requires no test cases"
+    ],
+    "answer": 1,
+    "explanation": "Defect testing aims to uncover faults, whereas reliability testing estimates operational failure probability."
+  },
+  {
+    "id": 138,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is a self-monitoring architecture?",
+    "options": [
+      "An architecture where the system monitors its own operations and compares results from multiple channels",
+      "An architecture with no redundancy",
+      "An architecture that uses a single channel",
+      "An architecture that monitors users"
+    ],
+    "answer": 0,
+    "explanation": "Self-monitoring architectures use multiple channels performing the same computation and compare results for consistency."
+  },
+  {
+    "id": 139,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is a safety-critical system?",
+    "options": [
+      "A system whose failure could cause injury or death",
+      "A system that is very reliable",
+      "A system that is secure",
+      "A system that is fast"
+    ],
+    "answer": 0,
+    "explanation": "Safety-critical systems are those where failure may result in loss of life, injury, or environmental damage."
+  },
+  {
+    "id": 140,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is the difference between safety and reliability?",
+    "options": [
+      "Safety is about avoiding accidents; reliability is about conforming to specification",
+      "They are the same",
+      "Reliability ensures safety",
+      "Safety is a subset of reliability"
+    ],
+    "answer": 0,
+    "explanation": "A system can be reliable (conforming to spec) but unsafe if the spec itself is flawed."
+  },
+  {
+    "id": 141,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is a hazard?",
+    "options": [
+      "An accident",
+      "A condition that could lead to an accident",
+      "A measure of damage",
+      "A safety requirement"
+    ],
+    "answer": 1,
+    "explanation": "Hazards are situations with potential to cause harm; they may not always lead to accidents."
+  },
+  {
+    "id": 142,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is fault tree analysis used for?",
+    "options": [
+      "To identify root causes of hazards",
+      "To design the system architecture",
+      "To write code",
+      "To test the system"
+    ],
+    "answer": 0,
+    "explanation": "Fault tree analysis is a deductive technique to trace hazards back to their causes."
+  },
+  {
+    "id": 143,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What does ALARP stand for?",
+    "options": [
+      "As Low As Reasonably Practicable",
+      "A Level Above Risk Probability",
+      "Always Lower Accident Risk Percentage",
+      "A Legal Assessment of Risk Prevention"
+    ],
+    "answer": 0,
+    "explanation": "ALARP means reducing risk to a level that is as low as reasonably practicable, considering cost and effort."
+  },
+  {
+    "id": 144,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is a safety requirement?",
+    "options": [
+      "A requirement that specifies how the system should behave to avoid accidents",
+      "A requirement for system speed",
+      "A requirement for user interface",
+      "A requirement for cost"
+    ],
+    "answer": 0,
+    "explanation": "Safety requirements define features that prevent or mitigate hazardous states."
+  },
+  {
+    "id": 145,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "Why is static analysis useful for safety-critical systems?",
+    "options": [
+      "It can detect potential errors without executing the program",
+      "It replaces testing",
+      "It is faster than compilation",
+      "It guarantees safety"
+    ],
+    "answer": 0,
+    "explanation": "Static analysis examines source code for anomalies, potential faults, and violations of coding standards."
+  },
+  {
+    "id": 146,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is model checking?",
+    "options": [
+      "A technique to check if a system model satisfies given properties by exploring all states",
+      "A way to review requirements",
+      "A type of testing",
+      "A design method"
+    ],
+    "answer": 0,
+    "explanation": "Model checking exhaustively verifies finite-state models against specifications."
+  },
+  {
+    "id": 147,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is the purpose of a hazard log?",
+    "options": [
+      "To track identified hazards and their analysis throughout development",
+      "To log system errors",
+      "To record test results",
+      "To document user complaints"
+    ],
+    "answer": 0,
+    "explanation": "A hazard log maintains records of hazards, risk assessments, and mitigation actions."
+  },
+  {
+    "id": 148,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "Why are agile methods rarely used for safety-critical systems?",
+    "options": [
+      "Because they require extensive documentation and upfront safety analysis, which agile minimizes",
+      "Because agile teams are not skilled",
+      "Because agile is too slow",
+      "Because safety-critical systems cannot be developed iteratively"
+    ],
+    "answer": 0,
+    "explanation": "Safety-critical systems need detailed documentation and upfront analysis for certification, conflicting with agile principles."
+  },
+
+  {
+    "id": 149,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the main purpose of process measurement in software process improvement?",
+    "options": [
+      "To evaluate the performance of individual developers",
+      "To establish a baseline for deciding if process improvements have been effective",
+      "To replace the need for process analysis",
+      "To determine the project budget"
+    ],
+    "answer": 1,
+    "explanation": "Process measurement collects data to assess whether changes have improved the process; it forms a baseline for comparison."
+  },
+  {
+    "id": 150,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "Which of the following is an example of a process metric?",
+    "options": [
+      "Number of lines of code",
+      "Number of defects discovered during testing",
+      "Response time of the system",
+      "User satisfaction score"
+    ],
+    "answer": 1,
+    "explanation": "Process metrics measure attributes of the software process, such as the number of defects discovered, time taken, or resources used."
+  },
+  {
+    "id": 151,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the key characteristic of the 'initial' level in the SEI Capability Maturity Model?",
+    "options": [
+      "Processes are defined and documented",
+      "Processes are quantitatively managed",
+      "Processes are uncontrolled and unpredictable",
+      "Processes are continuously improved"
+    ],
+    "answer": 2,
+    "explanation": "At the Initial level, processes are ad hoc, chaotic, and success depends on individual effort rather than established procedures."
+  },
+  {
+    "id": 152,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What does 'process change' involve in the process improvement cycle?",
+    "options": [
+      "Measuring the current process",
+      "Identifying process weaknesses",
+      "Proposing and introducing changes to address identified weaknesses",
+      "Documenting the process"
+    ],
+    "answer": 2,
+    "explanation": "Process change is the stage where improvements are proposed and implemented to address weaknesses found during analysis."
+  },
+  {
+    "id": 153,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "Why is it difficult to collect process data in organizations without defined process standards?",
+    "options": [
+      "Because there is too much data",
+      "Because you don't know what to measure without a defined process",
+      "Because process data is always confidential",
+      "Because process standards are irrelevant"
+    ],
+    "answer": 1,
+    "explanation": "Without a clear process definition, it is unclear which aspects to measure, making data collection meaningless."
+  },
+  {
+    "id": 154,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the purpose of the 'on-site customer' practice in XP?",
+    "options": [
+      "To provide food for the team",
+      "To have a customer representative available full-time to answer questions and clarify requirements",
+      "To handle project management tasks",
+      "To write the code"
+    ],
+    "answer": 1,
+    "explanation": "The on-site customer is a real user who works with the team, providing requirements and feedback continuously."
+  },
+  {
+    "id": 155,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "Which of the following is a key practice in XP for ensuring code quality through continuous improvement?",
+    "options": [
+      "Big design upfront",
+      "Refactoring",
+      "Waterfall planning",
+      "Documentation-first"
+    ],
+    "answer": 1,
+    "explanation": "Refactoring improves code structure without changing behavior, keeping the code simple and maintainable."
+  },
+  {
+    "id": 156,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "In Scrum, what is a 'sprint review'?",
+    "options": [
+      "A daily meeting",
+      "A meeting at the end of a sprint where the team demonstrates what they have completed",
+      "A planning meeting for the next sprint",
+      "A retrospective meeting"
+    ],
+    "answer": 1,
+    "explanation": "The sprint review is held at the end of each sprint to inspect the increment and adapt the product backlog if needed."
+  },
+  {
+    "id": 157,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the main benefit of continuous integration in agile development?",
+    "options": [
+      "It eliminates the need for testing",
+      "It allows teams to work in isolation",
+      "It detects integration problems early by frequently merging code changes",
+      "It reduces the need for communication"
+    ],
+    "answer": 2,
+    "explanation": "Continuous integration involves regularly integrating code changes, running automated tests to catch issues early."
+  },
+  {
+    "id": 158,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "Which of the following is a challenge when using agile methods in a large organization with a history of plan-driven development?",
+    "options": [
+      "Agile methods require no documentation, which conflicts with organizational standards",
+      "Agile methods are incompatible with all programming languages",
+      "Agile methods cannot be scaled to any team size",
+      "Agile methods require all team members to be co-located"
+    ],
+    "answer": 0,
+    "explanation": "Organizations with established quality procedures and documentation standards may find agile's informality incompatible."
+  },
+  {
+    "id": 159,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the role of a 'story card' in XP?",
+    "options": [
+      "To document detailed design",
+      "To describe a user requirement in a few sentences for planning",
+      "To record test cases",
+      "To assign tasks to developers"
+    ],
+    "answer": 1,
+    "explanation": "Story cards are used to write user stories, which are short descriptions of features for estimation and prioritization."
+  },
+  {
+    "id": 160,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the purpose of requirements prioritization?",
+    "options": [
+      "To decide which requirements to implement first based on value and constraints",
+      "To assign requirements to developers",
+      "To write requirements in a specific order",
+      "To validate requirements"
+    ],
+    "answer": 0,
+    "explanation": "Prioritization helps in planning incremental delivery by ordering requirements by importance and resolving conflicts."
+  },
+  {
+    "id": 161,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "Which of the following is a characteristic of a good requirement?",
+    "options": [
+      "Ambiguous and open to interpretation",
+      "Verifiable and testable",
+      "Vague to allow flexibility",
+      "Combines multiple ideas into one statement"
+    ],
+    "answer": 1,
+    "explanation": "Good requirements should be clear, unambiguous, and testable to ensure they can be verified."
+  },
+  {
+    "id": 162,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the main advantage of using structured natural language for requirements specification?",
+    "options": [
+      "It allows complete freedom of expression",
+      "It enforces a standard format, reducing ambiguity",
+      "It is machine-readable",
+      "It eliminates the need for diagrams"
+    ],
+    "answer": 1,
+    "explanation": "Structured natural language uses templates to ensure consistency and completeness, making requirements easier to understand."
+  },
+  {
+    "id": 163,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is a common problem when using interviews for requirements elicitation?",
+    "options": [
+      "Interviews always produce complete requirements",
+      "Stakeholders may use domain-specific language that is hard for engineers to understand",
+      "Interviews are too formal",
+      "Interviews cannot be recorded"
+    ],
+    "answer": 1,
+    "explanation": "Domain experts often use jargon, making it difficult for requirements engineers to grasp detailed knowledge."
+  },
+  {
+    "id": 164,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "Why is ethnography useful in requirements elicitation?",
+    "options": [
+      "It helps understand how people actually work, revealing implicit requirements",
+      "It replaces the need for interviews",
+      "It is faster than other methods",
+      "It focuses only on technical aspects"
+    ],
+    "answer": 0,
+    "explanation": "Ethnography involves observing users in their natural environment, uncovering real practices and social factors."
+  },
+  {
+    "id": 165,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What does a requirements traceability matrix help with?",
+    "options": [
+      "Tracking the progress of coding",
+      "Linking requirements to their origin and to design, implementation, and test artifacts",
+      "Managing project budget",
+      "Scheduling tasks"
+    ],
+    "answer": 1,
+    "explanation": "Traceability ensures that each requirement can be tracked throughout the development lifecycle, aiding impact analysis."
+  },
+  {
+    "id": 166,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the main purpose of a feasibility study in requirements engineering?",
+    "options": [
+      "To assess whether the proposed system is technically and economically viable",
+      "To write the user manual",
+      "To design the system architecture",
+      "To test the system"
+    ],
+    "answer": 0,
+    "explanation": "A feasibility study evaluates the practicality of the project in terms of technology, cost, and schedule before committing."
+  },
+  {
+    "id": 167,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "Which of the following is an example of a non-functional requirement?",
+    "options": [
+      "The system shall allow users to book appointments",
+      "The system shall comply with data protection regulations (GDPR)",
+      "The system shall send email confirmations",
+      "The system shall store patient records"
+    ],
+    "answer": 1,
+    "explanation": "Compliance with regulations is an external non-functional requirement, constraining how the system operates."
+  },
+  {
+    "id": 168,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the role of a scenario in requirements elicitation?",
+    "options": [
+      "To provide a concrete example of system use, facilitating discussion",
+      "To define the system architecture",
+      "To replace the requirements document",
+      "To test the system"
+    ],
+    "answer": 0,
+    "explanation": "Scenarios describe realistic interactions, helping stakeholders understand and validate requirements."
+  },
+  {
+    "id": 169,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is the purpose of a generalization hierarchy in class diagrams?",
+    "options": [
+      "To show part-whole relationships",
+      "To model inheritance where subclasses inherit from superclasses",
+      "To show message passing",
+      "To model data flow"
+    ],
+    "answer": 1,
+    "explanation": "Generalization allows subclasses to share attributes and operations from a superclass, promoting reuse."
+  },
+  {
+    "id": 170,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "Which UML diagram is used to model the physical deployment of software components on hardware nodes?",
+    "options": [
+      "Component diagram",
+      "Deployment diagram",
+      "Package diagram",
+      "Use case diagram"
+    ],
+    "answer": 1,
+    "explanation": "Deployment diagrams show the runtime configuration of hardware and software components."
+  },
+  {
+    "id": 171,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What does an aggregation association represent in a class diagram?",
+    "options": [
+      "A whole-part relationship where the part can exist independently",
+      "An inheritance relationship",
+      "A usage dependency",
+      "A one-to-one link"
+    ],
+    "answer": 0,
+    "explanation": "Aggregation indicates that one class (the whole) contains or is composed of other classes (parts)."
+  },
+  {
+    "id": 172,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is the main limitation of using UML for system modeling?",
+    "options": [
+      "UML is not standardized",
+      "UML lacks semantics for some high-level architectural concepts",
+      "UML cannot be used for object-oriented systems",
+      "UML is only for documentation"
+    ],
+    "answer": 1,
+    "explanation": "UML is primarily designed for detailed design; it may not have appropriate abstractions for high-level architecture description."
+  },
+  {
+    "id": 173,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is the purpose of a component diagram?",
+    "options": [
+      "To show the organization and dependencies among software components",
+      "To model user interactions",
+      "To show the flow of data",
+      "To model object states"
+    ],
+    "answer": 0,
+    "explanation": "Component diagrams illustrate how components are wired together to form larger systems."
+  },
+  {
+    "id": 174,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is the main disadvantage of the pipe-and-filter pattern for interactive systems?",
+    "options": [
+      "It is difficult to understand",
+      "It is not suitable for systems that require user interaction and feedback",
+      "It cannot handle data transformations",
+      "It requires a central repository"
+    ],
+    "answer": 1,
+    "explanation": "Pipe-and-filter is designed for sequential data processing, not for interactive, event-driven user interfaces."
+  },
+  {
+    "id": 175,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "Which architectural pattern is commonly used for compilers?",
+    "options": ["Repository", "Client-server", "Pipe-and-filter", "MVC"],
+    "answer": 2,
+    "explanation": "Compilers often use a pipe-and-filter architecture where stages like lexical analysis, parsing, and code generation are sequential filters."
+  },
+  {
+    "id": 176,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is the role of the 'development view' in the 4+1 architectural model?",
+    "options": [
+      "To show how software is decomposed for development, including modules and packages",
+      "To show runtime processes",
+      "To show hardware distribution",
+      "To show user interactions"
+    ],
+    "answer": 0,
+    "explanation": "The development view focuses on the software organization from a developer's perspective, such as module decomposition."
+  },
+  {
+    "id": 177,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "Why is architectural design important for achieving non-functional requirements?",
+    "options": [
+      "It directly influences performance, security, and maintainability",
+      "It only affects functionality",
+      "It has no impact on non-functional requirements",
+      "It is only concerned with user interface"
+    ],
+    "answer": 0,
+    "explanation": "Architectural decisions, such as component distribution and interaction patterns, significantly affect quality attributes."
+  },
+  {
+    "id": 178,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is a key benefit of using a layered architecture for security?",
+    "options": [
+      "Layers make the system faster",
+      "Critical assets can be placed in inner layers, requiring outer layers to be penetrated first",
+      "Layers eliminate the need for authentication",
+      "Layers simplify all interfaces"
+    ],
+    "answer": 1,
+    "explanation": "Layered architecture provides defense in depth by isolating critical components behind multiple layers of security."
+  },
+  {
+    "id": 179,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is the purpose of an interface in object-oriented design?",
+    "options": [
+      "To hide the implementation details of a class and define a contract for interaction",
+      "To store data",
+      "To manage memory",
+      "To compile code"
+    ],
+    "answer": 0,
+    "explanation": "Interfaces specify what operations a class provides without revealing how they are implemented, supporting encapsulation."
+  },
+  {
+    "id": 180,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What does the 'Façade' design pattern provide?",
+    "options": [
+      "A simplified interface to a complex subsystem",
+      "A way to create families of related objects",
+      "A way to add responsibilities to objects dynamically",
+      "A way to iterate over a collection"
+    ],
+    "answer": 0,
+    "explanation": "Façade hides the complexity of a subsystem by offering a unified, higher-level interface."
+  },
+  {
+    "id": 181,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is a common challenge when reusing software components?",
+    "options": [
+      "Components are always perfectly documented",
+      "Integration and adaptation costs can be high",
+      "Reuse eliminates the need for testing",
+      "Components never have licensing issues"
+    ],
+    "answer": 1,
+    "explanation": "Reusing components involves costs for evaluation, adaptation, and integration, which may offset benefits."
+  },
+  {
+    "id": 182,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is the main advantage of using a version control system in configuration management?",
+    "options": [
+      "It automatically fixes bugs",
+      "It tracks changes, allows collaboration, and enables rollback to previous versions",
+      "It compiles code faster",
+      "It replaces the need for testing"
+    ],
+    "answer": 1,
+    "explanation": "Version control manages different versions of files, facilitating team collaboration and change tracking."
+  },
+  {
+    "id": 183,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is the purpose of a build tool like Maven or Gradle?",
+    "options": [
+      "To write code",
+      "To automate the process of compiling, testing, and packaging software",
+      "To manage requirements",
+      "To design the architecture"
+    ],
+    "answer": 1,
+    "explanation": "Build tools automate the construction of software from source code, including dependency management and testing."
+  },
+  {
+    "id": 184,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the difference between a safety-related system and a safety-critical system?",
+    "options": [
+      "Safety-critical systems can cause loss of life; safety-related systems are less critical",
+      "They are the same",
+      "Safety-related systems have no safety implications",
+      "Safety-critical systems are always hardware-based"
+    ],
+    "answer": 0,
+    "explanation": "Safety-critical systems have direct potential for catastrophic harm, while safety-related systems contribute to safety but are not directly life-threatening."
+  },
+  {
+    "id": 185,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the main purpose of a socio-technical systems perspective in dependability?",
+    "options": [
+      "To focus only on software",
+      "To understand that failures can arise from interactions among people, organizations, and technology",
+      "To eliminate human involvement",
+      "To simplify system design"
+    ],
+    "answer": 1,
+    "explanation": "Socio-technical systems recognize that dependability depends on the entire context, including human and organizational factors."
+  },
+  {
+    "id": 186,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is a 'common-mode failure'?",
+    "options": [
+      "A failure that occurs in multiple redundant components due to the same cause",
+      "A failure that happens only once",
+      "A failure that is easy to fix",
+      "A failure caused by user error"
+    ],
+    "answer": 0,
+    "explanation": "Common-mode failures occur when redundant components fail simultaneously because of a shared vulnerability, defeating redundancy."
+  },
+  {
+    "id": 187,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "Why is diversity important in fault-tolerant systems?",
+    "options": [
+      "It makes the system more complex",
+      "It reduces the likelihood of common-mode failures by using different designs or technologies",
+      "It simplifies testing",
+      "It ensures all components are identical"
+    ],
+    "answer": 1,
+    "explanation": "Diversity prevents the same fault from affecting all redundant components, improving fault tolerance."
+  },
+  {
+    "id": 188,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the role of a regulator in safety-critical systems?",
+    "options": [
+      "To develop the system",
+      "To approve the system for use after reviewing evidence of safety",
+      "To write the code",
+      "To market the system"
+    ],
+    "answer": 1,
+    "explanation": "Regulators certify that a system meets required safety standards before it can be deployed."
+  },
+  {
+    "id": 189,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What does MTTF stand for and what does it measure?",
+    "options": [
+      "Mean Time To Failure – the average time between failures",
+      "Maximum Time To Failure – the longest possible operation time",
+      "Minimum Time To Failure – the shortest time before failure",
+      "Mean Time To Fix – average repair time"
+    ],
+    "answer": 0,
+    "explanation": "MTTF is a reliability metric indicating the average time a system operates before a failure occurs."
+  },
+  {
+    "id": 190,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "Why is it difficult to specify quantitative reliability requirements for business systems?",
+    "options": [
+      "Because business systems never fail",
+      "Because it requires understanding operational profiles and failure costs, which may be hard to predict",
+      "Because business systems are not critical",
+      "Because reliability cannot be measured"
+    ],
+    "answer": 1,
+    "explanation": "Quantitative reliability specification requires data on usage patterns and acceptable failure rates, which may not be available."
+  },
+  {
+    "id": 191,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is the purpose of a recovery block in fault-tolerant software?",
+    "options": [
+      "To provide an alternative computation if a primary block fails, with acceptance tests",
+      "To store backup data",
+      "To restart the system",
+      "To log errors"
+    ],
+    "answer": 0,
+    "explanation": "Recovery blocks use acceptance tests to check results and invoke alternates if the primary fails."
+  },
+  {
+    "id": 192,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is a key challenge in using N-version programming?",
+    "options": [
+      "It guarantees perfect reliability",
+      "It is difficult to ensure true independence between versions, as teams may make similar mistakes",
+      "It requires no additional cost",
+      "It eliminates the need for testing"
+    ],
+    "answer": 1,
+    "explanation": "Despite efforts, different teams may still produce correlated faults due to common specifications or cognitive biases."
+  },
+  {
+    "id": 193,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is the main advantage of using timeouts when calling external components?",
+    "options": [
+      "It speeds up communication",
+      "It prevents the system from waiting indefinitely if the remote component fails",
+      "It reduces network traffic",
+      "It eliminates the need for error handling"
+    ],
+    "answer": 1,
+    "explanation": "Timeouts allow the system to detect failures and take recovery actions instead of hanging forever."
+  },
+  {
+    "id": 194,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is the purpose of a safety integrity level (SIL)?",
+    "options": [
+      "To measure the size of the system",
+      "To define the level of risk reduction required for safety functions",
+      "To indicate the number of safety requirements",
+      "To rate the user interface"
+    ],
+    "answer": 1,
+    "explanation": "SILs specify the required probability of failure for safety functions, guiding development rigor."
+  },
+  {
+    "id": 195,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is a common technique for hazard analysis in safety engineering?",
+    "options": [
+      "Fault tree analysis (FTA)",
+      "Use case modeling",
+      "Class diagrams",
+      "Sequence diagrams"
+    ],
+    "answer": 0,
+    "explanation": "FTA is a deductive method to identify causes of hazards and quantify probabilities."
+  },
+  {
+    "id": 196,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "Why is it important to have a hazard log?",
+    "options": [
+      "To record all system errors during operation",
+      "To document identified hazards, their analysis, and mitigation actions throughout development",
+      "To log user complaints",
+      "To track project progress"
+    ],
+    "answer": 1,
+    "explanation": "A hazard log provides traceability and evidence that hazards are properly managed."
+  },
+  {
+    "id": 197,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is the difference between a primary and secondary safety-critical system?",
+    "options": [
+      "Primary systems directly control hardware that can cause harm; secondary systems indirectly affect safety through other systems",
+      "Primary systems are more important than secondary",
+      "Secondary systems have no safety implications",
+      "Primary systems are always software-based"
+    ],
+    "answer": 0,
+    "explanation": "Primary safety-critical systems have direct control over actuators; secondary systems provide information or services that affect safety decisions."
+  },
+  {
+    "id": 198,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is the goal of a safety argument in a safety case?",
+    "options": [
+      "To prove that the system is 100% safe",
+      "To provide a logical justification, backed by evidence, that the system meets its safety requirements",
+      "To describe the system architecture",
+      "To list all safety requirements"
+    ],
+    "answer": 1,
+    "explanation": "A safety argument links evidence to claims, demonstrating that the system is acceptably safe."
+  },
+
+  {
+    "id": 199,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the main difference between validation and verification?",
+    "options": [
+      "Validation checks if we built the right system; verification checks if we built the system right",
+      "Validation is done by developers; verification is done by customers",
+      "Validation finds bugs; verification fixes them",
+      "They are the same activity"
+    ],
+    "answer": 0,
+    "explanation": "Verification ensures the system meets its specification, while validation ensures it meets customer needs."
+  },
+  {
+    "id": 200,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the purpose of system integration testing?",
+    "options": [
+      "To test individual components in isolation",
+      "To test the interactions between integrated components or subsystems",
+      "To test the system with customer data",
+      "To test non-functional requirements only"
+    ],
+    "answer": 1,
+    "explanation": "Integration testing focuses on interfaces and interactions after components are combined."
+  },
+  {
+    "id": 201,
+    "lecture": "Lecture 2 – Software Processes",
+    "question": "What is the main goal of customer testing (acceptance testing)?",
+    "options": [
+      "To find as many bugs as possible",
+      "To check that the system meets the customer's needs and is acceptable for delivery",
+      "To test the system under heavy load",
+      "To verify the system architecture"
+    ],
+    "answer": 1,
+    "explanation": "Acceptance testing is performed by or with the customer to validate that the system meets their requirements."
+  },
+  {
+    "id": 202,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the 'planning poker' technique used for in agile?",
+    "options": [
+      "To decide who works on which task",
+      "To estimate the effort or size of user stories collaboratively",
+      "To resolve conflicts in the team",
+      "To prioritize the product backlog"
+    ],
+    "answer": 1,
+    "explanation": "Planning poker is a consensus-based estimation technique where team members assign story points to user stories."
+  },
+  {
+    "id": 203,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is a key characteristic of a self-organizing team in Scrum?",
+    "options": [
+      "The team is managed by a project manager who assigns tasks",
+      "The team decides internally how to best accomplish their work, rather than being directed by others",
+      "The team only follows orders from the product owner",
+      "The team does not need to communicate"
+    ],
+    "answer": 1,
+    "explanation": "Self-organizing teams have autonomy in determining how to achieve sprint goals."
+  },
+  {
+    "id": 204,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "What is the main purpose of a sprint retrospective?",
+    "options": [
+      "To plan the next sprint",
+      "To review the product increment",
+      "For the team to reflect on the past sprint and identify improvements for the next one",
+      "To demonstrate the product to stakeholders"
+    ],
+    "answer": 2,
+    "explanation": "The retrospective focuses on process improvement and team dynamics, not on the product itself."
+  },
+  {
+    "id": 205,
+    "lecture": "Lecture 3 – Agile Software Development",
+    "question": "Which of the following is NOT an XP practice?",
+    "options": [
+      "Test-first development",
+      "Pair programming",
+      "Big design upfront",
+      "Continuous integration"
+    ],
+    "answer": 2,
+    "explanation": "XP avoids big design upfront, favoring incremental design and refactoring."
+  },
+  {
+    "id": 206,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the main challenge with using mathematical specifications for requirements?",
+    "options": [
+      "They are too imprecise",
+      "Most customers cannot understand them, so they cannot validate that they represent their needs",
+      "They cannot be used for critical systems",
+      "They are not supported by any tools"
+    ],
+    "answer": 1,
+    "explanation": "Formal specifications are unambiguous but inaccessible to non-technical stakeholders, hindering validation."
+  },
+  {
+    "id": 207,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is the purpose of a 'shall not' requirement?",
+    "options": [
+      "To specify features that are optional",
+      "To define prohibited behaviors or states that must never occur, often for safety or security",
+      "To indicate low-priority requirements",
+      "To describe user interface guidelines"
+    ],
+    "answer": 1,
+    "explanation": "Shall-not requirements are common in safety-critical systems to forbid dangerous actions."
+  },
+  {
+    "id": 208,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "Why is it important to include a rationale for each requirement?",
+    "options": [
+      "To explain why the requirement is needed, helping in future changes and prioritization",
+      "To make the document longer",
+      "To satisfy a documentation standard only",
+      "To confuse the developers"
+    ],
+    "answer": 0,
+    "explanation": "Rationale provides context, aiding in understanding the intent and impact of changes."
+  },
+  {
+    "id": 209,
+    "lecture": "Lecture 4 – Requirements Engineering",
+    "question": "What is a common problem with requirements elicitation using only interviews?",
+    "options": [
+      "Interviews always reveal all requirements",
+      "Stakeholders may not be able to articulate tacit knowledge or may have conflicting views",
+      "Interviews are too structured",
+      "Interviews cannot be recorded"
+    ],
+    "answer": 1,
+    "explanation": "People often find it hard to explain implicit aspects of their work, and different stakeholders may have contradictory needs."
+  },
+  {
+    "id": 210,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is the purpose of a package diagram in UML?",
+    "options": [
+      "To show the organization of model elements into groups or packages",
+      "To model object interactions",
+      "To show the physical deployment",
+      "To model state changes"
+    ],
+    "answer": 0,
+    "explanation": "Package diagrams help manage large models by grouping related elements, showing dependencies between packages."
+  },
+  {
+    "id": 211,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "Which UML diagram is best for modeling concurrent processes and their synchronization?",
+    "options": [
+      "Activity diagram",
+      "Class diagram",
+      "Component diagram",
+      "Deployment diagram"
+    ],
+    "answer": 0,
+    "explanation": "Activity diagrams can model parallel flows and synchronization points using forks and joins."
+  },
+  {
+    "id": 212,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is a key benefit of using model-driven engineering (MDE)?",
+    "options": [
+      "It eliminates the need for requirements",
+      "It allows systems to be considered at higher levels of abstraction and can generate code automatically",
+      "It guarantees bug-free software",
+      "It is only useful for small systems"
+    ],
+    "answer": 1,
+    "explanation": "MDE raises abstraction level, enabling platform independence and automatic generation of implementations."
+  },
+  {
+    "id": 213,
+    "lecture": "Lecture 5 – System Modeling",
+    "question": "What is a limitation of model-driven architecture (MDA)?",
+    "options": [
+      "It cannot be used for object-oriented systems",
+      "It requires specialized tools for model transformations, and upfront modeling may conflict with agile values",
+      "It produces unreadable code",
+      "It has no tool support"
+    ],
+    "answer": 1,
+    "explanation": "MDA adoption is limited by tool availability, cost, and the need for significant upfront modeling effort."
+  },
+  {
+    "id": 214,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is the main advantage of the repository pattern for data sharing?",
+    "options": [
+      "Components are tightly coupled",
+      "All data is managed consistently in one place, and changes can be propagated to all components",
+      "It eliminates the need for a database",
+      "It improves performance by distributing data"
+    ],
+    "answer": 1,
+    "explanation": "A central repository ensures data consistency and simplifies component communication."
+  },
+  {
+    "id": 215,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is a disadvantage of the client-server pattern?",
+    "options": [
+      "Servers cannot be distributed",
+      "Each server is a single point of failure, and performance depends on network load",
+      "It cannot handle multiple clients",
+      "It requires all clients to be identical"
+    ],
+    "answer": 1,
+    "explanation": "Server failure can disrupt all clients, and network latency affects performance."
+  },
+  {
+    "id": 216,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "Which architectural pattern is best suited for systems that require multiple levels of security?",
+    "options": [
+      "Layered architecture",
+      "Pipe-and-filter",
+      "Repository",
+      "Client-server"
+    ],
+    "answer": 0,
+    "explanation": "Layered architecture allows placing critical assets in inner layers, with each layer providing security checks."
+  },
+  {
+    "id": 217,
+    "lecture": "Lecture 6 – Architectural Design",
+    "question": "What is the main purpose of using architectural patterns?",
+    "options": [
+      "To enforce a specific programming language",
+      "To reuse proven solutions for common architectural problems",
+      "To replace the need for design",
+      "To eliminate non-functional requirements"
+    ],
+    "answer": 1,
+    "explanation": "Patterns capture best practices, making them reusable and helping designers communicate effectively."
+  },
+  {
+    "id": 218,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is the purpose of the 'Iterator' design pattern?",
+    "options": [
+      "To provide a way to access elements of a collection sequentially without exposing its underlying representation",
+      "To create objects without specifying their concrete classes",
+      "To separate the construction of a complex object from its representation",
+      "To define a family of algorithms"
+    ],
+    "answer": 0,
+    "explanation": "Iterator pattern allows traversal of collections regardless of their internal structure."
+  },
+  {
+    "id": 219,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is a key benefit of using open source components in development?",
+    "options": [
+      "They have no licensing issues",
+      "They can reduce development time and cost, and benefit from community contributions",
+      "They always meet all requirements perfectly",
+      "They require no integration effort"
+    ],
+    "answer": 1,
+    "explanation": "Open source components offer ready-made functionality, but need evaluation and integration."
+  },
+  {
+    "id": 220,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What is the main purpose of a problem tracking system in configuration management?",
+    "options": [
+      "To track bugs, feature requests, and their status",
+      "To manage source code versions",
+      "To build the system automatically",
+      "To design the architecture"
+    ],
+    "answer": 0,
+    "explanation": "Problem tracking systems (issue trackers) manage defects and enhancement requests throughout the lifecycle."
+  },
+  {
+    "id": 221,
+    "lecture": "Lecture 7 – Design and Implementation",
+    "question": "What does the 'Decorator' design pattern allow?",
+    "options": [
+      "To add responsibilities to objects dynamically without affecting other objects",
+      "To ensure a class has only one instance",
+      "To provide a surrogate for another object",
+      "To encapsulate a request as an object"
+    ],
+    "answer": 0,
+    "explanation": "Decorator pattern wraps an object to add new behaviors, offering a flexible alternative to subclassing."
+  },
+  {
+    "id": 222,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the main difference between repairability and maintainability?",
+    "options": [
+      "Repairability is about fixing failures; maintainability is about adapting to new requirements",
+      "They are the same",
+      "Maintainability is about fixing bugs; repairability is about hardware",
+      "Repairability is a subset of maintainability"
+    ],
+    "answer": 0,
+    "explanation": "Repairability refers to restoring service after failure; maintainability refers to ease of making changes."
+  },
+  {
+    "id": 223,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is a 'denial of service' attack targeting?",
+    "options": ["Reliability", "Availability", "Safety", "Maintainability"],
+    "answer": 1,
+    "explanation": "DoS attacks aim to make a system unavailable to legitimate users, directly impacting availability."
+  },
+  {
+    "id": 224,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "Why is it important to consider the socio-technical system stack in dependability?",
+    "options": [
+      "Because software failures are isolated",
+      "Because failures can propagate through layers (e.g., society → organization → software)",
+      "Because hardware never fails",
+      "Because humans are always reliable"
+    ],
+    "answer": 1,
+    "explanation": "Changes or failures in higher layers (like regulations or business processes) can affect software dependability."
+  },
+  {
+    "id": 225,
+    "lecture": "Lecture 8 – Dependable systems",
+    "question": "What is the purpose of a safety and dependability case?",
+    "options": [
+      "To replace testing",
+      "To provide a structured argument and evidence that the system meets its dependability requirements",
+      "To document the system architecture",
+      "To list all system faults"
+    ],
+    "answer": 1,
+    "explanation": "The case is required for certification, demonstrating that the system is acceptably safe and dependable."
+  },
+  {
+    "id": 226,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is the main advantage of using fault avoidance techniques?",
+    "options": [
+      "They eliminate the need for testing",
+      "They reduce the introduction of faults during development through better practices",
+      "They make the system faster",
+      "They are cheaper than fault tolerance"
+    ],
+    "answer": 1,
+    "explanation": "Fault avoidance prevents errors from occurring in the first place via good design and processes."
+  },
+  {
+    "id": 227,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is the purpose of range checks in dependable programming?",
+    "options": [
+      "To ensure input values fall within acceptable limits",
+      "To check if a file exists",
+      "To verify user permissions",
+      "To test network connectivity"
+    ],
+    "answer": 0,
+    "explanation": "Range checks prevent invalid data from causing errors or failures."
+  },
+  {
+    "id": 228,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "Why is it important to avoid using unbounded arrays in dependable programming?",
+    "options": [
+      "They are slower",
+      "They can lead to buffer overflow vulnerabilities if bounds are not checked",
+      "They are not supported in most languages",
+      "They make code harder to read"
+    ],
+    "answer": 1,
+    "explanation": "Unbounded arrays without bounds checking can be exploited by attackers to overwrite memory."
+  },
+  {
+    "id": 229,
+    "lecture": "Lecture 9 – Reliability Engineering",
+    "question": "What is the main challenge in reliability measurement?",
+    "options": [
+      "It is impossible to measure reliability",
+      "It requires a statistically significant number of failures, which is hard for highly reliable systems",
+      "It can only be done after deployment",
+      "It requires no operational profile"
+    ],
+    "answer": 1,
+    "explanation": "Highly reliable systems fail rarely, so collecting enough failure data for accurate measurement takes a long time."
+  },
+  {
+    "id": 230,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is the purpose of a 'hazard and operability study' (HAZOP)?",
+    "options": [
+      "To identify potential hazards and operability problems in a system",
+      "To design the user interface",
+      "To test the system",
+      "To manage project schedule"
+    ],
+    "answer": 0,
+    "explanation": "HAZOP is a structured, team-based approach to identify deviations from design intent that could lead to hazards."
+  },
+  {
+    "id": 231,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is a 'safety integrity level' (SIL) used for?",
+    "options": [
+      "To measure the size of the safety team",
+      "To specify the required risk reduction for safety functions, influencing development rigor",
+      "To indicate the number of safety requirements",
+      "To rate the safety of the user interface"
+    ],
+    "answer": 1,
+    "explanation": "SIL determines the level of rigor needed in development and validation based on the risk of failure."
+  },
+  {
+    "id": 232,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "Why is it difficult to use agile methods for safety-critical systems?",
+    "options": [
+      "Agile methods are too slow",
+      "Safety-critical systems require extensive upfront analysis and documentation for certification, which agile minimizes",
+      "Agile teams are not skilled enough",
+      "Agile methods cannot handle iterative development"
+    ],
+    "answer": 1,
+    "explanation": "Agile's focus on working software over documentation conflicts with the evidence required for safety certification."
+  },
+  {
+    "id": 233,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is the main purpose of a safety review?",
+    "options": [
+      "To review the code for style",
+      "To assess whether the system can cope with identified hazards in a safe way",
+      "To review the project budget",
+      "To test the system"
+    ],
+    "answer": 1,
+    "explanation": "Safety reviews evaluate the system's ability to handle hazards safely, often using the hazard log as input."
+  },
+  {
+    "id": 234,
+    "lecture": "Lecture 10 – Safety Engineering",
+    "question": "What is the difference between a safety argument and a correctness argument?",
+    "options": [
+      "A safety argument aims to show the system cannot reach an unsafe state; a correctness argument aims to show it conforms to its specification",
+      "They are the same",
+      "Correctness arguments are weaker",
+      "Safety arguments are about performance"
+    ],
+    "answer": 0,
+    "explanation": "Safety focuses on preventing harm, even if the system doesn't fully meet its specification."
+  }
+]
